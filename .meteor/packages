@@ -21,16 +21,17 @@ nova:rss
 nova:kadira
 nova:email
 nova:subscribe
+nova:forms-tags
 
 ############ Customizable Packages ############
 
 nova:base-components
-nova:base-styles
+# nova:base-styles
 nova:base-routes
 nova:email-templates
 nova:i18n-en-us
 
-accounts-password@1.3.0
+accounts-password
 # accounts-twitter
 # accounts-facebook
 
@@ -41,3 +42,6 @@ nova:debug
 ############ Your Packages ############
 
 # my-custom-package
+truvote-logic
+truvote-styles
+
