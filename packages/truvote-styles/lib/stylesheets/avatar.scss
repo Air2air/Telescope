@@ -1,0 +1,77 @@
+@import 'variables';
+@import 'colors';
+//@import '../bootstrap-4.0.0-alpha.4/scss/bootstrap.scss';
+
+/*----------- Variables for this page ------------*/
+
+$avatar-component-width:160px;
+$dot-size: 40px;
+$dot-color-inactive:$base-color;
+$dot-color-active:$oppose;
+$transform-hover: scale(1.1);
+
+/*----------- Avatar ------------*/
+
+div.avatar {
+    position: relative;
+    width: $avatar-component-width;
+    $dot-size: 38px;
+    height: $dot-size;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    //background: blue;
+    > div {
+        padding: 0;
+        margin: 0;
+    }
+    div.avatar-image {
+        position: absolute;
+        float: left;
+        text-align: center;
+        height: $dot-size;
+        width: $dot-size;
+        line-height: $dot-size;
+        border-radius: 50%;
+        -o-background-size: $dot-size!important;
+        -moz-background-size: $dot-size $dot-size!important;
+        -webkit-background-size: $dot-size!important;
+        background-size: $dot-size!important;
+        transition: all .2s ease-in-out;
+    }
+    div.avatar-alert {
+        $avatar-alert-size: $dot-size * .6;
+        position: absolute;
+        top: 0;
+        left: ($dot-size * .7);
+        text-align: center;
+        color: $white;
+        height: $avatar-alert-size;
+        width: $avatar-alert-size;
+        line-height: $avatar-alert-size;
+        border-radius: 50%;
+        background: red;
+    }
+    div.avatar-value {
+        $avatar-value-margin: 14px;
+        $avatar-value-width: (($avatar-component-width - $dot-size) - $avatar-value-margin);
+        margin-left: $avatar-value-margin;
+        float: right;
+        width: $avatar-value-width;
+        line-height: $dot-size;
+        text-align: left;
+        font-size: 1.3em;
+        color: $text-light;
+        transition: all .2s ease-in-out;
+        //background: red;
+    }
+    &.active {}
+    &:hover {
+        div.avatar-image {
+            transform: $transform-hover;
+        }
+        div.avatar-value {
+            color: $text-dark;
+        }
+    }
+}

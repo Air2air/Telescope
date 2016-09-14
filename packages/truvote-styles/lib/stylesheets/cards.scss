@@ -1,0 +1,132 @@
+@import 'variables';
+@import 'colors';
+//@import '../bootstrap-4.0.0-alpha.4/scss/bootstrap.scss';
+$card-header-height:60px;
+$card-footer-height:44px;
+$card-border-color:#eee;
+.row.cards {
+    & > [class^="col-"], & > [class*=" col-"] {
+        padding-right: 6px;
+        padding-left: 6px;
+        .card {
+            cursor: pointer;
+            border-radius: $border-radius;
+            border: 1px solid #eee;
+            transition: all .2s ease-in-out;
+            overflow: hidden;
+            padding: 0;
+            margin-top: 12px;
+            border: 1px solid $card-border-color;
+            //height: 260px;
+            //background: red;
+            &:hover {
+                //background: rgba(246, 246, 246, 1);
+                transform: scale(1.02);
+            }
+            div.card-header {
+                height: $card-header-height;
+                padding: 0;
+                border-bottom: none;
+                table {
+                    margin: 0 auto;
+                    width: auto;
+                    //background: red;
+                    td.logo {
+                        height: $card-header-height;
+                        width: $card-header-height;
+                        text-align: right;
+                        padding-right: 10px;
+                        opacity: .4;
+                        img {
+                            height: ($card-header-height * .7);
+                            width: ($card-header-height * .7);
+                        }
+                    }
+                    td.text {
+                        //display: inline-block;
+                        div {
+                            $card-header-line-height: ($card-header-height * .5);
+                            height: $card-header-line-height;
+                            line-height: $card-header-line-height;
+                            font-family: 'Roboto', sans-serif;
+                            text-align: center;
+                            &.dept {
+                                line-height: ($card-header-line-height * 1.4);
+                                font-size: 1.1em;
+                                color: lighten($text-dark, 20%);
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                            }
+                            &.org {
+                                line-height: ($card-header-line-height * .7);
+                                font-size: .8em;
+                                color: lighten($text-base, 20%);
+                                white-space: nowrap;
+                                text-transform: uppercase;
+                                text-overflow: ellipsis;
+                                letter-spacing: 0.1em;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+            div.card-image {
+                height: 100px!important;
+                width: auto;
+                border-bottom: 1px solid $card-border-color;
+                background-size: cover!important;
+                background-position: center!important;
+                background-repeat: no-repeat!important;
+                background: rgba(240, 240, 240, 1);
+            }
+            div.card-block {
+                padding: 8px;
+                div.card-title {
+                    font-size: 1.5em;
+                    width: 100%;
+                    height: 90px;
+                    line-height: 1.2em;
+                    text-overflow: ellipsis;
+                    font-family: 'Roboto Condensed', sans-serif;
+                    display: table;
+                    //background: lightblue;
+                    span {
+                        display: table-cell;
+                        vertical-align: middle;
+                        //background: gold;
+                    }
+                }
+                div.card-date {
+                    font-size: 1em;
+                    height: 14px;
+                    line-height: 1.2em;
+                    text-overflow: ellipsis;
+                    //white-space: nowrap;
+                    font-family: 'Roboto', sans-serif;
+                    color: $text-light;
+                    //background: gold;
+                }
+            }
+            div.card-footer {
+                height: $card-footer-height;
+                padding: 0;
+                border-top: none;
+                > div {
+                    //text-align: center!important;
+                    line-height: $card-footer-height;
+                    height: $card-footer-height;
+                    padding: 0;
+                    margin: 0;
+                    //background: gold;
+                    span {
+                        height: $card-footer-height;
+                        line-height: $card-footer-height;
+                        margin: 0;
+                        //background: gold;
+                    }
+                }
+            }
+        }
+    }
+}

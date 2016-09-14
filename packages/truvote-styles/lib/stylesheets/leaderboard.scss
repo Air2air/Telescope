@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'colors';
+
+.icon-row {
+    $icon-row-height:40px;
+    margin:14px 0;
+    height: $icon-row-height;
+    width: auto;
+    padding: 0;
+    border: none;
+    //background: gold;
+}
+

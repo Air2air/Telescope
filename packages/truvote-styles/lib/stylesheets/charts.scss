@@ -1,0 +1,87 @@
+@import 'variables';
+@import 'colors';
+//@import '../bootstrap-4.0.0-alpha.4/scss/bootstrap.scss';
+
+
+
+$chart-card-width:80px; // Controls everything below
+div.chart-card {
+    position: relative;
+    $chart-card-height: ($chart-card-width * .5);
+    height: $chart-card-height;
+    width: $chart-card-width;
+    margin: 0 auto;
+    overflow: hidden;
+    //background: rgba(250, 250, 250, 0.7);
+    div {
+        position: absolute;
+        $chart-card-height-inner: ($chart-card-width * .7);
+        margin-top: -($chart-card-height-inner / 6);
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0;
+        height: $chart-card-height-inner;
+        width: $chart-card-width;
+        //background: rgba(0, 0, 0, 0.2);
+        text {
+            font-size: ($chart-card-width/2)!important;
+            font-weight: normal!important;
+        }
+    }
+}
+
+
+
+
+
+$chart-sm-width:120px; // Controls everything below
+div.chart-sm {
+    position: relative;
+    $chart-sm-height: ($chart-sm-width * .5);
+    height: $chart-sm-height;
+    width: $chart-sm-width;
+    margin: 0 auto;
+    overflow: hidden;
+    //background: rgba(250, 250, 250, 0.7);
+    div {
+        position: absolute;
+        $chart-sm-height-inner: ($chart-sm-width * .7);
+        margin-top: -($chart-sm-height-inner / 6);
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0;
+        height: $chart-sm-height-inner;
+        width: $chart-sm-width;
+        //background: rgba(0, 0, 0, 0.2);
+        text {
+            font-size: ($chart-sm-width/3.8)!important;
+            font-weight: normal!important;
+        }
+    }
+}
+
+$chart-md-width:180px; // Controls everything below
+div.chart-md {
+    position: relative;
+    $chart-md-height: ($chart-md-width * .5);
+    height: $chart-md-height;
+    width: $chart-md-width;
+    margin: 0 auto;
+    overflow: hidden;
+    //background: rgba(250, 250, 250, 0.7);
+    div {
+        position: absolute;
+        $chart-md-height-inner: ($chart-md-width * .7);
+        margin-top: -($chart-md-height-inner / 6);
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0;
+        height: $chart-md-height-inner;
+        width: $chart-md-width;
+        //background: rgba(0, 0, 0, 0.2);
+        text {
+            font-size: ($chart-md-width/6.5)!important;
+            font-weight: normal!important;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@import 'variables';
+@import 'colors';
+//@import '../bootstrap-4.0.0-alpha.4/scss/bootstrap.scss';
+$control-height:90px;
+.control {
+    height: $control-height;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    //overflow: hidden;
+    border: none;
+    cursor: pointer;
+    //background: gold;
+    .control-name {
+        margin-top: 0;
+        height:30px;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2em;
+        //background: red;
+    }
+    //background: red;
+    @media (max-width: 543px) {
+        // XS
+        //height: 50px;
+        //background: black;
+    }
+    @media (min-width: 544px) and (max-width: 767px) {
+        // SM
+        //height: 50px;
+        //background: red;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        // MD
+        //height: 50px;
+        //background: blue;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+        // LG
+        //height: 50px;
+        //background: black;
+    }
+    @media (min-width: 1200px) {
+        //height: 50px;
+        //background: gray;
+    }
+}

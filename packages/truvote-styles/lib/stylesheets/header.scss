@@ -1,0 +1,40 @@
+@import 'variables';
+@import 'colors';
+//@import '../bootstrap-4.0.0-alpha.4/scss/bootstrap.scss';
+$navbar-height:70px;
+$brand-width:100px;
+$top-padding: ($navbar-height * .18);
+
+.navbar {
+    height: $navbar-height;
+    background: $navbar-background;
+    text-align: center;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    div.container-fluid {
+        div.row {
+            div.brand {
+                padding: 0;
+                height: $navbar-height;
+                a {
+                    float: right;
+                    margin-top: ($top-padding * .6);
+                    margin-right: 16px;
+                    height: 60px;
+                    width: 60px;
+                    background: url('../images/brand/logo-round.svg') center center no-repeat;
+                    //background-size: ($brand-width * .65);
+                }
+            }
+            div.search {
+                height: $navbar-height;
+                padding-top: $top-padding;
+            }
+            div.avatar {
+                margin-top: ($top-padding + 2);
+                margin-left: 4px;
+                margin-right: 4px;
+            }
+        }
+    }
+}

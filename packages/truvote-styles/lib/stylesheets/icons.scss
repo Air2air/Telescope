@@ -1,0 +1,53 @@
+@import 'variables';
+@import 'colors';
+//@import '../bootstrap-4.0.0-alpha.4/scss/bootstrap.scss';
+
+
+/*----------- Icon controls ------------*/
+$icon-size:40px;
+
+div.icon {
+    height: $icon-size;
+    width: auto;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    padding: 0;
+    //background: blue;
+    span.fa {
+        padding: 0 6px 0 0;
+        float: left;
+        width: 50%;
+        min-width: 16px;
+        text-align: right;
+        height: $icon-size;
+        line-height: $icon-size;
+        font-size: .9em;
+        color: $icon-color;
+        //background: gold;
+    }
+    span.value {
+        padding: 0;
+        float: left;
+        width: 50%;
+        min-width: 20px;
+        line-height:$icon-size;
+        text-align: left!important;
+        font-size: 1em;
+        color: $text-base;
+        //background: red;
+    }
+    // }
+    &.active {}
+    &:hover {
+        transform: $transform-hover;
+        > div {
+            div.fa {
+                color: darken($base-light, 10%);
+            }
+            div.value {
+                color: darken($text-base, 10%);
+            }
+        }
+    }
+}

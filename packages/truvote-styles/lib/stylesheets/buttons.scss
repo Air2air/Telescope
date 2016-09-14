@@ -1,0 +1,35 @@
+@import 'variables';
+@import 'colors';
+//@import '../bootstrap-4.0.0-alpha.4/scss/bootstrap.scss';
+/*
+.btn {
+    $button-height:80px;
+    height:$button-height;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: .9em;
+    color: #fff;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: $button-height;
+    padding: 0;
+    .fa {
+        font-size: .9em;
+        color: fade(#fff, 50%);
+    }
+    */
+
+.btn-support {
+    color: $white;
+    background: $support;
+}
+
+.btn-oppose {
+    color: $white;
+    background: $oppose;
+}
+
+.btn-total {
+    color: $white;
+    background: $total;
+}

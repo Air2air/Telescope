@@ -1,5 +1,7 @@
 // @import '{}/node_modules/bootstrap/scss/bootstrap.scss';
 
+// Nova
+/*
 @import "breakpoints";
 @import "colors";
 @import "variables";
@@ -16,6 +18,21 @@
 @import "forms";
 @import "posts";
 @import "users";
+*/
+
+// TruVote
+@import 'avatar';
+@import 'buttons';
+@import 'cards';
+@import 'charts';
+@import 'dots';
+@import 'dashboard';
+@import 'icons';
+@import 'fonts';
+@import 'forms';
+@import 'header';
+@import 'layout';
+@import 'leaderboard';
 
 .new-post-button{
   margin-bottom: 15px;

@@ -73,7 +73,6 @@ mongo-livedata@1.0.12
 nova:api@0.27.0-nova
 nova:base-components@0.27.0-nova
 nova:base-routes@0.27.0-nova
-nova:base-styles@0.27.0-nova
 nova:categories@0.27.0-nova
 nova:comments@0.27.0-nova
 nova:core@0.27.0-nova
@@ -83,6 +82,7 @@ nova:email-templates@0.27.0-nova
 nova:embedly@0.27.0-nova
 nova:events@0.27.0-nova
 nova:forms@0.27.0-nova
+nova:forms-tags@0.27.0-nova
 nova:getting-started@0.27.0-nova
 nova:i18n-en-us@0.27.0-nova
 nova:kadira@0.27.0-nova
@@ -132,6 +132,9 @@ std:accounts-ui@1.2.6
 tmeasday:check-npm-versions@0.3.1
 tmeasday:publish-counts@0.7.3
 tracker@1.1.0
+truvote-base-components@0.0.1
+truvote-logic@0.0.1
+truvote-styles@0.0.1
 ui@1.0.11
 underscore@1.0.9
 url@1.0.10
