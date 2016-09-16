@@ -25,8 +25,8 @@ nova:forms-tags
 
 ############ Customizable Packages ############
 
-# nova:base-components
-# nova:base-styles
+nova:base-components
+nova:base-styles
 nova:base-routes
 nova:email-templates
 nova:i18n-en-us
@@ -41,7 +41,7 @@ nova:debug
 
 ############ Your Packages ############
 
-truvote-base-components
 truvote-logic
-truvote-styles
+# truvote-base-components
+# truvote-styles
 

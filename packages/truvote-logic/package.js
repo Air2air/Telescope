@@ -21,7 +21,8 @@ Package.onUse( function(api) {
   ], ['client', 'server']);
 
   api.addFiles([
-    'lib/server/templates.js'
+    'lib/server/templates.js',
+    'lib/server/dexi/index.js'
   ], ['server']);
 
   api.addAssets([

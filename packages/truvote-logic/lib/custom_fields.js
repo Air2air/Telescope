@@ -8,6 +8,7 @@ import PublicationUtils from 'meteor/utilities:smart-publications';
 
 // users permissions
 const canInsertUser = user => Users.canDo(user, "users.new");
+const canEditAllUsers = user => Users.canDo(user, "users.edit.all");
 
 // posts permissions
 const canInsertPost = user => Users.canDo(user, "posts.new");
@@ -17,7 +18,7 @@ const canEditAllPosts = user => Users.canDo(user, "posts.edit.all");
 const canEdit = Users.canEdit;
 
 // users fields
-Users.addField(
+Users.addField([
   {
     fieldName: 'location',
     fieldSchema: {
@@ -34,9 +35,19 @@ Users.addField(
       optional: true, // simple-schema property: let the account being created
       required: true, // nova property: make the popup to show after sign up
     }
-  }
-);
-PublicationUtils.addToFields(Users.publishedFields.list, ["location"]);
+  },
+  {
+    fieldName: 'dexi',
+    fieldSchema: {
+      type: String,
+      insertableIf: canEditAllUsers, // only insertable by admins
+      editableIf: canEditAllUsers, // only editable by admins
+      publish: true,
+      optional: true, 
+    }
+  },
+]);
+PublicationUtils.addToFields(Users.publishedFields.list, ["location", "dexi"]);
 
 // posts fields
 Posts.addField([
