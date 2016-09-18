@@ -1,3 +1,42 @@
+@import 'variables';
+@import 'colors';
+//@import '../bootstrap-4.0.0-alpha.4/scss/bootstrap.scss';
+$navbar-height:70px;
+$brand-width:100px;
+$top-padding: ($navbar-height * .18);
+.header-wrapper {
+    height: $navbar-height;
+    background: $navbar-background;
+    text-align: center;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: $vmargin;
+    header.header {
+        div.logo h1.logo-image {
+            float: left;
+            padding: 0;
+            height: $navbar-height;
+            a {
+                margin-top: ($top-padding * .6);
+                margin-right: 16px;
+                height: ($navbar-height - 10);
+                width: $brand-width;
+            }
+        }
+        div.search {
+            height: $navbar-height;
+            padding-top: $top-padding;
+        }
+        div.avatar {
+            margin-top: ($top-padding + 2);
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+    }
+}
+
+
+/*
 .header-wrapper{
   background: $header-bg;
   margin-bottom: $vmargin;
@@ -77,3 +116,4 @@
     }
   }
 }
+*/

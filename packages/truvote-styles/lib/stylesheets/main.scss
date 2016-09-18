@@ -1,64 +1,55 @@
-// @import '{}/node_modules/bootstrap/scss/bootstrap.scss';
 
-// Nova
-/*
-@import "breakpoints";
-@import "colors";
+
 @import "variables";
-@import "spinner";
-@import "global";
-
+@import "colors";
 @import "accounts";
+@import "avatar";
+@import "breakpoints";
+@import "buttons";
+@import "cards";
 @import "categories";
+@import "charts";
 @import "cheatsheet";
 @import "comments";
+@import "dashboard";
+@import "dots";
+@import "fonts";
+@import "global";
 @import "header";
+@import "icons";
+@import "leaderboard";
 @import "newsletter";
 @import "other";
-@import "forms";
 @import "posts";
+@import "spinner";
 @import "users";
-*/
 
-// TruVote
-@import 'avatar';
-@import 'buttons';
-@import 'cards';
-@import 'charts';
-@import 'dots';
-@import 'dashboard';
-@import 'icons';
-@import 'fonts';
-@import 'forms';
-@import 'header';
-@import 'layout';
-@import 'leaderboard';
 
-.new-post-button{
-  margin-bottom: 15px;
+.new-post-button {
+    margin-bottom: 15px;
 }
 
-code{
-  font-family: monospace;
-  background: #fafafa;
-  border: 1px solid #ddd;
-  padding: 3px 6px;
+code {
+    font-family: monospace;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    padding: 3px 6px;
 }
 
-.avatar{
-  height: 24px;
-  width: 24px;
-  display: inline-block;
+.avatar {
+    height: 24px;
+    width: 24px;
+    display: inline-block;
 }
 
-.sr-only{
-  display: none;
+.sr-only {
+    display: none;
 }
 
-.upvoted .upvote{
-  opacity: 0.3;
+.upvoted .upvote {
+    opacity: 0.3;
 }
 
-.posts-day h2{
-  font-weight: bold;
+.posts-day h2 {
+    font-weight: bold;
 }
