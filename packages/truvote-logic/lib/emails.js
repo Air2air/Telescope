@@ -18,3 +18,4 @@ NovaEmail.addEmails({
   }
 
 });
+

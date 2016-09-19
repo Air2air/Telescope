@@ -6,7 +6,6 @@ const Header = ({currentUser}) => {
   
   const logoUrl = Telescope.settings.get("logoUrl");
   const siteTitle = Telescope.settings.get("title", "Nova");
-  const tagline = Telescope.settings.get("tagline");
 
   return (
     <div className="header-wrapper">
@@ -15,7 +14,6 @@ const Header = ({currentUser}) => {
 
         <div className="logo">
           <Telescope.components.Logo logoUrl={logoUrl} siteTitle={siteTitle} />
-          {tagline ? <h2 className="tagline">{tagline}</h2> : "" }
         </div>
         
         <div className="nav">

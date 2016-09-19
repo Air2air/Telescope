@@ -2,7 +2,7 @@
 @import 'colors';
 //@import '../bootstrap-4.0.0-alpha.4/scss/bootstrap.scss';
 $navbar-height:70px;
-$brand-width:100px;
+$brand-width:12s0px;
 $top-padding: ($navbar-height * .18);
 .header-wrapper {
     height: $navbar-height;
@@ -12,108 +12,110 @@ $top-padding: ($navbar-height * .18);
     border-bottom: 1px solid #eee;
     margin-bottom: $vmargin;
     header.header {
-        div.logo h1.logo-image {
-            float: left;
-            padding: 0;
-            height: $navbar-height;
-            a {
-                margin-top: ($top-padding * .6);
-                margin-right: 16px;
-                height: ($navbar-height - 10);
-                width: $brand-width;
+        div.logo {
+            div.logo-image {
+                a {
+                    float: left;
+                    padding: 0;
+                    height: $navbar-height;
+                    img {
+                        margin-top: ($top-padding * .6);
+                        margin-right: 16px;
+                        height: ($navbar-height - 10);
+                        width: $brand-width;
+                    }
+                }
             }
-        }
-        div.search {
-            height: $navbar-height;
-            padding-top: $top-padding;
-        }
-        div.avatar {
-            margin-top: ($top-padding + 2);
-            margin-left: 4px;
-            margin-right: 4px;
+            div.search {
+                height: $navbar-height;
+                padding-top: $top-padding;
+            }
+            div.avatar {
+                margin-top: ($top-padding + 2);
+                margin-left: 4px;
+                margin-right: 4px;
+            }
         }
     }
 }
-
-
 /*
 .header-wrapper{
-  background: $header-bg;
-  margin-bottom: $vmargin;
+background: $header-bg;
+margin-bottom: $vmargin;
 }
 
 .header{
-  @include medium-large{
-    @include flex-center;
-    justify-content: space-between;
-  }
-  padding-top: $vmargin;
-  padding-bottom: $vmargin;
+@include medium-large{
+@include flex-center;
+justify-content: space-between;
+}
+padding-top: $vmargin;
+padding-bottom: $vmargin;
 }
 
 .logo{
-  @include small{
-    text-align: center;
-  }
-  @include medium-large{
-    display: flex;
-    align-items: baseline;
-    .logo-text{
-      margin-right: $hmargin;
-    }
-    .logo-image{
-      margin-right: $hmargin;
-    }
-  }
-  .tagline{
-    font-size: 1.35rem;
-  }
+@include small{
+text-align: center;
+}
+@include medium-large{
+display: flex;
+align-items: baseline;
+.logo-text{
+  margin-right: $hmargin;
+}
+.logo-image{
+  margin-right: $hmargin;
+}
+}
+.tagline{
+font-size: 1.35rem;
+}
 }
 
 .nav{
-  @include flex-center;
-  @include small{
-    border-top: 1px solid $medium-grey;
-    margin-top: $vmargin;
-    padding-top: $vmargin;
-    justify-content: space-between;
-  }
-  @include medium-large{
-    .nav-user{
-      margin-right: $hmargin;
-    }
-  }
-  .nav-new-post{
-    @include small{
+@include flex-center;
+@include small{
+border-top: 1px solid $medium-grey;
+margin-top: $vmargin;
+padding-top: $vmargin;
+justify-content: space-between;
+}
+@include medium-large{
+.nav-user{
+  margin-right: $hmargin;
+}
+}
+.nav-new-post{
+@include small{
 
-    }
-  }
+}
+}
 }
 
 .users-account-menu, .users-menu{
-  .dropdown-toggle{
-    @include flex-center;
-    padding: 0;
-    background: none;
-    img{
-      margin-right: 5px;
-    }
-  }
+.dropdown-toggle{
+@include flex-center;
+padding: 0;
+background: none;
+img{
+  margin-right: 5px;
+}
+}
 }
 
 .accounts-ui{
-  padding: $vmargin;
-  min-width: 240px;
-  .buttons{
-    .btn{
-      display: block;
-      width: 100%;
-      text-align: center;
-      margin-bottom: $vmargin;
-      &:last-child{
-        margin-bottom: 0;
-      }
-    }
+padding: $vmargin;
+min-width: 240px;
+.buttons{
+.btn{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: $vmargin;
+  &:last-child{
+    margin-bottom: 0;
   }
+}
+}
 }
 */
