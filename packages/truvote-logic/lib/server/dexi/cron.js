@@ -44,11 +44,11 @@ const dexiCron = async function() {
         
         // one of the required header was missing *IN THE DEXI's DEFINITION* of the result, abort.
         if (_.contains(headersIndex, -1)) {
-          console.log("// Dexi Config Error - One of the required header was missing *IN THE DEXI's DEFINITION* of the result");
+          console.log("// Dexi Config Warning - One of the required header was missing *IN THE DEXI's DEFINITION* of the result");
           console.log('')
           console.log("Headers defined:", headers);
           console.log("Missing headers are marked as `-1`:", headersIndex);
-          console.log("UserId / Run:", {userId: orgIds[index], runId: dexiRuns[index]});
+          console.log("UserId / Run:", orgIds[index], "/", dexiRuns[index]);
         }
         
         rows.map(post => {
@@ -105,7 +105,7 @@ dexiCron();
 SyncedCron.add({
   name: 'fetchDexi',
   schedule: function(parser) {
-    return parser.text('every day at 1am');
+    return parser.text('at 01:00 am');
   }, 
   job: function() {
     if (!!Telescope.settings.get("dexiAccount") && !!Telescope.settings.get("dexiApiKey")) {
