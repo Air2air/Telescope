@@ -3,11 +3,6 @@
 @import 'variables';
 @import 'colors';
 
-
-body{
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", sans-serif;
-}
-
 .main, .footer, .header{
   margin-left: auto;
   margin-right: auto;
@@ -17,12 +12,4 @@ body{
 
 .main{
   margin-bottom: $vmargin;
-}
-
-a{
-  cursor: pointer;
-}
-
-.page-title{
-  margin-bottom: $vmargin*2;
 }

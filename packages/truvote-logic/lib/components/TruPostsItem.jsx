@@ -19,7 +19,7 @@ class TruPostsItem extends Telescope.components.PostsItem {
     return (
       <div className={postClass}>
         
-        {post.thumbnailUrl ? <Telescope.components.PostsThumbnail post={post}/> : null}
+      {post.thumbnailUrl ? <Telescope.components.PostsThumbnail post={post}/> : null} 
 
         <div className="posts-item-content">
           
@@ -34,8 +34,8 @@ class TruPostsItem extends Telescope.components.PostsItem {
             {post.user? <div className="posts-item-user"><Telescope.components.UsersAvatar user={post.user} size="small"/><Telescope.components.UsersName user={post.user}/></div> : null}
             <div className="posts-item-date"><FormattedRelative value={post.postedAt}/></div>
             <div className="posts-item-supports">
-             /* <Telescope.components.TruPostsApprove post={post} />
-              <Telescope.components.TruPostsReject post={post} /> */
+             <Telescope.components.TruPostsApprove post={post} />
+              <Telescope.components.TruPostsReject post={post} />
             </div>
             {this.renderActions()}
           </div>

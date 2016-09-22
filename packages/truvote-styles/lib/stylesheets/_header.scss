@@ -1,9 +1,7 @@
 @import 'variables';
 @import 'colors';
-//@import '../bootstrap-4.0.0-alpha.4/scss/bootstrap.scss';
 $navbar-height:70px;
-$brand-width:12s0px;
-$top-padding: ($navbar-height * .18);
+$dot-size: 40px;
 .header-wrapper {
     height: $navbar-height;
     background: $navbar-background;
@@ -12,32 +10,130 @@ $top-padding: ($navbar-height * .18);
     border-bottom: 1px solid #eee;
     margin-bottom: $vmargin;
     header.header {
-        div.logo {
-            div.logo-image {
+        /*----------- Logo ------------*/
+        div.nav-logo {
+            $nav-logo-height: 40px;
+            $nav-logo-width: 40px;
+            $nav-logo-side-margin: 30px;
+            float: left;
+            height: $navbar-height;
+            width: $nav-logo-width;
+            @include flex-center;
+            .inner {
+                margin-left: $nav-logo-side-margin;
+                margin-right: $nav-logo-side-margin;
+                height: $nav-logo-height;
+                width: $nav-logo-width;
+                //background: blue;
                 a {
-                    float: left;
-                    padding: 0;
-                    height: $navbar-height;
+                    height: inherit;
+                    width: inherit;
                     img {
-                        margin-top: ($top-padding * .6);
-                        margin-right: 16px;
-                        height: ($navbar-height - 10);
-                        width: $brand-width;
+                        height: inherit;
+                        width: inherit;
                     }
                 }
             }
-            div.search {
-                height: $navbar-height;
-                padding-top: $top-padding;
+        }
+        /*----------- Search ------------*/
+        div.nav-search {
+            $nav-search-width: 30%;
+            $nav-search-side-margin: 90px;
+            margin-left: $nav-search-side-margin;
+            margin-right: $nav-search-side-margin;
+            height: $navbar-height;
+            width: $nav-search-width;
+            @include flex-center;
+            float: left;
+            //background: gold;
+            .inner input {
+                width: 100%;
             }
-            div.avatar {
-                margin-top: ($top-padding + 2);
-                margin-left: 4px;
-                margin-right: 4px;
+            //height: $navbar-height;
+            //width: $dot-size;
+        }
+        /*----------- Alerts ------------*/
+        div.nav-alert-dot {
+            $nav-alert-side-margin: 10px;
+            @include flex-center;
+            margin-left: $nav-alert-side-margin;
+            margin-right: $nav-alert-side-margin;
+            height: $navbar-height;
+            width: $dot-size;
+            float: right;
+            .inner {
+                //@include flex-center;
+                height: $dot-size;
+                width: $dot-size;
+                color: $white;
+                line-height: $dot-size;
+                background: red;
+                border-radius: 50%;
+                text-align: center!important;
+            }
+        }
+        /*----------- User ------------*/
+        div.users-menu {
+            $nav-user-width: 200px;
+            @include flex-center;
+            height: $navbar-height;
+            width: $nav-user-width;
+            float: right;
+            //background: blue;
+            div.dropdown {
+                //@include flex-center;
+                height: inherit;
+                width: inherit;
+                //background: blue;
+                button#user-dropdown.dropdown-toggle.btn.btn-default {
+                    $nav-avatar-div-width: $dot-size;
+                    $nav-avatar-name-margin: 10px;
+                    $nav-avatar-name-width: ($nav-user-width - $nav-avatar-div-width) - $nav-avatar-name-margin;
+                    padding: 0;
+                    height: inherit;
+                    width: inherit;
+                    background: none!important;
+                    border: none!important;
+                    div.nav-avatar-div {
+                        @include flex-center;
+                        float: left;
+                        height: inherit;
+                        width: $nav-avatar-div-width;
+                        //background: blue;
+                        #user-dropdown img.avatar {
+                            height: $dot-size;
+                            width: $dot-size;
+                            border-radius: 50%;
+                            //transition: all .2s ease-in-out;
+                            //background: blue;
+                        }
+                    }
+                    div.nav-avatar-name {
+                        @include flex-center;
+                        margin-left: $nav-avatar-name-margin;
+                        float: left;
+                        height: inherit;
+                        width: $nav-avatar-name-width;
+                        line-height: $dot-size;
+                        text-align: left;
+                        font-size: 1.3em;
+                        color: $text-light;
+                        //transition: all .2s ease-in-out;
+                        //background: gold;
+                    }
+                    span.caret {
+                        display: none!important;
+                        width: 20px;
+                        height: 20px;
+                        //background: green;
+                    }
+                }
             }
         }
     }
 }
+
+
 /*
 .header-wrapper{
 background: $header-bg;
@@ -61,10 +157,10 @@ text-align: center;
 display: flex;
 align-items: baseline;
 .logo-text{
-  margin-right: $hmargin;
+margin-right: $hmargin;
 }
 .logo-image{
-  margin-right: $hmargin;
+margin-right: $hmargin;
 }
 }
 .tagline{
@@ -82,7 +178,7 @@ justify-content: space-between;
 }
 @include medium-large{
 .nav-user{
-  margin-right: $hmargin;
+margin-right: $hmargin;
 }
 }
 .nav-new-post{
@@ -98,7 +194,7 @@ justify-content: space-between;
 padding: 0;
 background: none;
 img{
-  margin-right: 5px;
+margin-right: 5px;
 }
 }
 }
@@ -108,13 +204,13 @@ padding: $vmargin;
 min-width: 240px;
 .buttons{
 .btn{
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin-bottom: $vmargin;
-  &:last-child{
-    margin-bottom: 0;
-  }
+display: block;
+width: 100%;
+text-align: center;
+margin-bottom: $vmargin;
+&:last-child{
+margin-bottom: 0;
+}
 }
 }
 }
