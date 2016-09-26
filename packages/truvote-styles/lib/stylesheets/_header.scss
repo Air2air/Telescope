@@ -1,132 +1,143 @@
 @import 'variables';
 @import 'colors';
-$navbar-height:70px;
-$dot-size: 40px;
-.header-wrapper {
+$navbar-height:66px;
+$navbar-bottom-margin:20px;
+$nav-logo-width: 90px;
+$nav-search-width: 30%;
+$nav-alert-width: $dot-size;
+$nav-user-width: 200px;
+nav.navbar {
     height: $navbar-height;
     background: $navbar-background;
     text-align: center;
-    padding: 0;
+    padding: 0 30px;
     border-bottom: 1px solid #eee;
-    margin-bottom: $vmargin;
-    header.header {
-        /*----------- Logo ------------*/
-        div.nav-logo {
-            $nav-logo-height: 40px;
-            $nav-logo-width: 40px;
-            $nav-logo-side-margin: 30px;
-            float: left;
-            height: $navbar-height;
-            width: $nav-logo-width;
-            @include flex-center;
-            .inner {
-                margin-left: $nav-logo-side-margin;
-                margin-right: $nav-logo-side-margin;
-                height: $nav-logo-height;
-                width: $nav-logo-width;
-                //background: blue;
-                a {
+    margin-bottom: $navbar-bottom-margin;
+    /*----------- Logo ------------*/
+    div.navbar-logo {
+        $nav-logo-height: $dot-size;
+        @include flex-center;
+        height: $navbar-height;
+        text-align: center;
+        //background: gold;
+        .inner {
+            height: $nav-logo-height;
+            width: $dot-size;
+            margin: 0 auto;
+            //background: blue;
+            a {
+                height: inherit;
+                width: inherit;
+                img {
                     height: inherit;
                     width: inherit;
-                    img {
-                        height: inherit;
-                        width: inherit;
-                    }
                 }
             }
         }
-        /*----------- Search ------------*/
-        div.nav-search {
-            $nav-search-width: 30%;
-            $nav-search-side-margin: 90px;
-            margin-left: $nav-search-side-margin;
-            margin-right: $nav-search-side-margin;
-            height: $navbar-height;
-            width: $nav-search-width;
-            @include flex-center;
-            float: left;
-            //background: gold;
-            .inner input {
-                width: 100%;
+    }
+    /*----------- Search ------------*/
+    div.navbar-search {
+        $search-input-color: #ddd;
+        @include flex-center;
+        height: $navbar-height;
+        //background: red;
+        .input-group {
+            span.input-group-addon {
+                border: none;
+                i {
+                    font-size: .9rem;
+                    color: $search-input-color;
+                }
             }
-            //height: $navbar-height;
-            //width: $dot-size;
+            input {
+                font-size: 1.1rem;
+                font-family: Roboto-Bold;
+                height: ($navbar-height * 0.6);
+                background: #eee;
+                border: none;
+                color: $search-input-color;
+            }
         }
-        /*----------- Alerts ------------*/
-        div.nav-alert-dot {
-            $nav-alert-side-margin: 10px;
-            @include flex-center;
-            margin-left: $nav-alert-side-margin;
-            margin-right: $nav-alert-side-margin;
-            height: $navbar-height;
-            width: $dot-size;
-            float: right;
+    }
+    /*----------- Alerts ------------*/
+    div.navbar-alert {
+        @include flex-center;
+        height: $navbar-height;
+        //background: lightblue;
+        a {
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+            }
             .inner {
-                //@include flex-center;
                 height: $dot-size;
                 width: $dot-size;
-                color: $white;
-                line-height: $dot-size;
+                cursor: pointer;
                 background: red;
                 border-radius: 50%;
                 text-align: center!important;
+                span {
+                    color: $white;
+                    line-height: $dot-size;
+                    font-size: 1.1rem;
+                    font-family: Roboto-Bold;
+                }
             }
         }
-        /*----------- User ------------*/
-        div.users-menu {
-            $nav-user-width: 200px;
-            @include flex-center;
-            height: $navbar-height;
-            width: $nav-user-width;
-            float: right;
+    }
+    /*----------- User ------------*/
+    div.navbar-users {
+        @include flex-center;
+        height: $navbar-height;
+        width: $nav-user-width;
+        float: right;
+        //background: blue;
+        div.dropdown {
+            //@include flex-center;
+            height: inherit;
+            width: inherit;
             //background: blue;
-            div.dropdown {
-                //@include flex-center;
+            button#user-dropdown.dropdown-toggle.btn.btn-default {
+                $nav-avatar-div-width: $dot-size;
+                $nav-avatar-name-margin: 10px;
+                $nav-avatar-name-width: ($nav-user-width - $nav-avatar-div-width) - $nav-avatar-name-margin;
+                padding: 0;
                 height: inherit;
                 width: inherit;
-                //background: blue;
-                button#user-dropdown.dropdown-toggle.btn.btn-default {
-                    $nav-avatar-div-width: $dot-size;
-                    $nav-avatar-name-margin: 10px;
-                    $nav-avatar-name-width: ($nav-user-width - $nav-avatar-div-width) - $nav-avatar-name-margin;
-                    padding: 0;
+                background: none!important;
+                border: none!important;
+                div.nav-avatar-div {
+                    @include flex-center;
+                    float: left;
                     height: inherit;
-                    width: inherit;
-                    background: none!important;
-                    border: none!important;
-                    div.nav-avatar-div {
-                        @include flex-center;
-                        float: left;
-                        height: inherit;
-                        width: $nav-avatar-div-width;
-                        //background: blue;
-                        #user-dropdown img.avatar {
-                            height: $dot-size;
-                            width: $dot-size;
-                            border-radius: 50%;
-                            //transition: all .2s ease-in-out;
-                            //background: blue;
-                        }
-                    }
-                    div.nav-avatar-name {
-                        @include flex-center;
-                        margin-left: $nav-avatar-name-margin;
-                        float: left;
-                        height: inherit;
-                        width: $nav-avatar-name-width;
-                        line-height: $dot-size;
-                        text-align: left;
-                        font-size: 1.3em;
-                        color: $text-light;
+                    width: $nav-avatar-div-width;
+                    //background: blue;
+                    #user-dropdown img.avatar {
+                        height: $dot-size;
+                        width: $dot-size;
+                        border-radius: 50%;
                         //transition: all .2s ease-in-out;
-                        //background: gold;
+                        //background: blue;
                     }
-                    span.caret {
-                        display: none!important;
-                        width: 20px;
-                        height: 20px;
-                        //background: green;
-                    }
+                }
+                div.nav-avatar-name {
+                    @include flex-center;
+                    margin-left: $nav-avatar-name-margin;
+                    float: left;
+                    height: inherit;
+                    width: $nav-avatar-name-width;
+                    line-height: $dot-size;
+                    text-align: left;
+                    font-size: 1.3rem;
+                    color: $text-light;
+                    //transition: all .2s ease-in-out;
+                    //background: gold;
+                }
+                span.caret {
+                    //display: none!important;
+                    width: 20px;
+                    height: 50px;
+                    background: green;
                 }
             }
         }

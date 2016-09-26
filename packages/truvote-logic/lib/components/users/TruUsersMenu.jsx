@@ -15,11 +15,10 @@ class UsersMenu extends Component {
     const user = this.props.user;
 
     return (
-      <div className="users-menu">
         <Dropdown id="user-dropdown">
           <Dropdown.Toggle>
-          <div className="nav-avatar-div">
-            <Telescope.components.UsersAvatar user={user} link={false} />
+            <div className="nav-avatar-div">
+              <Telescope.components.UsersAvatar user={user} link={false} />
             </div>
             <div className="nav-avatar-name">{Users.getDisplayName(user)}</div>
           </Dropdown.Toggle>
@@ -33,7 +32,6 @@ class UsersMenu extends Component {
             <MenuItem className="dropdown-item" eventKey="4" onClick={() => Meteor.logout(Accounts.ui._options.onSignedOutHook())}><FormattedMessage id="users.log_out"/></MenuItem>
           </Dropdown.Menu>
         </Dropdown>
-      </div>
     ) 
   }
 

@@ -1,31 +1,4 @@
-$light-yellow: #FFFBDB;
 
-$lightest-grey: #f3f3f3;
-$lighter-grey: #eee;
-$light-grey: #ddd;
-
-$light-blue: #DAEDFF; 
-$blue: #0275d8;
-$white: #fff;
-$medium-grey: #bbb;
-$dark-grey: #888;
-$black: #333;
-
-$red: #E04E4B;
-
-$header-bg: $light-blue;
-
-$active-color: $blue;
-
-$lightest-border: $lightest-grey;
-$lighter-border: $lighter-grey;
-$light-border: $light-grey;
-
-$light-text: $medium-grey;
-$medium-text: $dark-grey;
-
-// Truvote
-//https://color.adobe.com/Red-Green-And-Soft-Red-color-theme-7231577/edit/?copy=true
 
 /* ------ Base color --------- */
 
@@ -40,9 +13,9 @@ $base-dark: mix($black, $base-color, 20%);
 
 /* ------ Text color --------- */
 
-$text-base: #888;
+$text-base: #333;
 $text-extra-light: mix(white, $text-base, 70%);
-$text-light: mix(white, $text-base, 30%);
+$text-light: lighten($text-base, 20%);
 $text-dark: mix(black, $text-base, 50%);
 
 /* ------ Icon color --------- */
@@ -65,4 +38,17 @@ $total: rgb(140, 176, 202);
 
 /* ------ Navbar --------- */
 $navbar-background: rgba( $white, 1 );
+
+
+
+$active-color: lighten($base-color,30%);
+$light-blue: #6db5ff;
+$light-yellow: #f8f7a6;
+$light-grey:#aaaaaa;
+$dark-grey:#666666;
+
+
+
+
+
 

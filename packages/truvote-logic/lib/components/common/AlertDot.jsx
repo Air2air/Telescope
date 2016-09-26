@@ -4,9 +4,9 @@ import { IndexLink } from 'react-router';
 const AlertDot = ({}) => {
 
     return (
-    <div className="nav-alert-dot">
+    <div className="m-x-auto">
 		<IndexLink to={{pathname: "/"}}>
-			<div className="inner">
+			<div className="inner grow">
 				<span>4</span>
 			</div>
         </IndexLink>

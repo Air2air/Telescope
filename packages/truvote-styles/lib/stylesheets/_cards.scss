@@ -5,7 +5,8 @@ $card-header-height:60px;
 $card-footer-height:44px;
 $card-border-color:#eee;
 .row.cards {
-    & > [class^="col-"], & > [class*=" col-"] {
+    & > [class^="col-"],
+    & > [class*=" col-"] {
         padding-right: 6px;
         padding-left: 6px;
         .card {
@@ -17,90 +18,96 @@ $card-border-color:#eee;
             padding: 0;
             margin-top: 12px;
             border: 1px solid $card-border-color;
-            //height: 260px;
             //background: red;
-            &:hover {
-                //background: rgba(246, 246, 246, 1);
-                transform: scale(1.02);
-            }
             div.card-header {
                 height: $card-header-height;
                 padding: 0;
                 border-bottom: none;
-                table {
-                    margin: 0 auto;
-                    width: auto;
-                    //background: red;
-                    td.logo {
-                        height: $card-header-height;
-                        width: $card-header-height;
-                        text-align: right;
-                        padding-right: 10px;
-                        opacity: .4;
-                        img {
-                            height: ($card-header-height * .7);
-                            width: ($card-header-height * .7);
-                        }
+                div.logo {
+                    $header-logo-size: 30px;
+                    $header-logo-padding: 10px;
+                    @include flex-center;
+                    float: left;
+                    text-align: center;
+                    padding-left: $header-logo-padding;
+                    padding-right: $header-logo-padding;
+                    height: $card-header-height;
+                    width: ($header-logo-padding * 2) + $header-logo-size;
+                    opacity: .4;
+                    //background: gold;
+                    img {
+                        height: $header-logo-size;
+                        width: $header-logo-size;
                     }
-                    td.text {
-                        //display: inline-block;
-                        div {
-                            $card-header-line-height: ($card-header-height * .5);
-                            height: $card-header-line-height;
-                            line-height: $card-header-line-height;
+                }
+                div.text {
+                    margin: 0 auto;
+                    //background: red;
+                    div {
+                        $card-header-line-height: ($card-header-height * .5);
+                        height: $card-header-line-height;
+                        line-height: $card-header-line-height;
+                        text-align: center;
+                        &.dept {
                             font-family: 'Roboto', sans-serif;
-                            text-align: center;
-                            &.dept {
-                                line-height: ($card-header-line-height * 1.4);
-                                font-size: 1.1em;
-                                color: lighten($text-dark, 20%);
-                                white-space: nowrap;
-                                text-overflow: ellipsis;
-                            }
-                            &.org {
-                                line-height: ($card-header-line-height * .7);
-                                font-size: .8em;
-                                color: lighten($text-base, 20%);
-                                white-space: nowrap;
-                                text-transform: uppercase;
-                                text-overflow: ellipsis;
-                                letter-spacing: 0.1em;
-                                font-weight: bold;
-                            }
+                            font-size: 1rem;
+                            line-height: ($card-header-line-height * 1.4);
+                            color: lighten($text-dark, 20%);
+                            width: auto;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                        &.org {
+                            font-family: 'Roboto-Medium', sans-serif;
+                            font-size: .9rem;
+                            line-height: ($card-header-line-height * .7);
+                            color: lighten($text-base, 50%);
+                            white-space: nowrap;
+                            text-transform: uppercase;
+                            text-overflow: ellipsis;
+                            letter-spacing: 0.1rem;
+                            font-weight: bold;
                         }
                     }
                 }
             }
             div.card-image {
+                overflow: hidden;
                 height: 100px!important;
                 width: auto;
                 border-bottom: 1px solid $card-border-color;
-                background-size: cover!important;
-                background-position: center!important;
-                background-repeat: no-repeat!important;
-                background: rgba(240, 240, 240, 1);
+                a {
+                    img {
+                        width: 100%;
+                        @include vertical-align;
+                    }
+                }
             }
             div.card-block {
                 padding: 8px;
                 div.card-title {
-                    font-size: 1.5em;
+                    position: relative;
+                    padding: 0;
+                    font-size: 1.5rem;
                     width: 100%;
                     height: 90px;
-                    line-height: 1.2em;
+                    line-height: 1.2rem;
                     text-overflow: ellipsis;
-                    font-family: 'Roboto Condensed', sans-serif;
                     display: table;
                     //background: lightblue;
                     span {
                         display: table-cell;
                         vertical-align: middle;
                         //background: gold;
+                        a {
+                            color: $text-light;
+                        }
                     }
                 }
                 div.card-date {
-                    font-size: 1em;
+                    font-size: 1rem;
                     height: 14px;
-                    line-height: 1.2em;
+                    line-height: 1.2rem;
                     text-overflow: ellipsis;
                     //white-space: nowrap;
                     font-family: 'Roboto', sans-serif;

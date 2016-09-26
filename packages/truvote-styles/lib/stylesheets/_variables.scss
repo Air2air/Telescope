@@ -6,7 +6,7 @@ $small-font: 0.9rem;
 $medium-font: 1rem;
 $large-font: 1.25rem;
 $larger-font: 1.35rem;
-$border: 1px solid $light-border;
+$border: 1px solid #eeeeee;
 @mixin activeHover {
     &:hover {
         background: $active-color;
@@ -14,6 +14,35 @@ $border: 1px solid $light-border;
         border-color: $active-color;
         text-decoration: none;
     }
+}
+
+$dot-size: 33px;
+
+/*----- Transforms -------*/
+
+$grow-scale-timing:.3s;
+$grow-scale-amt:1.08;
+$grow-scale-easing:ease-in-out;
+.grow {
+    &:hover {
+        -webkit-transition: -webkit-transform $grow-scale-timing $grow-scale-easing;
+        transition: -webkit-transform $grow-scale-timing $grow-scale-easing;
+        -o-transition: -o-transform $grow-scale-timing $grow-scale-easing;
+        transition: transform $grow-scale-timing $grow-scale-easing, -webkit-transform $grow-scale-timing $grow-scale-easing, -o-transform $grow-scale-timing $grow-scale-easing;
+        -webkit-transform: scale($grow-scale-amt, $grow-scale-amt);
+        -ms-transform: translate($grow-scale-amt, $grow-scale-amt);
+        -o-transform: translate($grow-scale-amt, $grow-scale-amt);
+        transform: translate($grow-scale-amt, $grow-scale-amt);
+    }
+}
+
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform:  perspective(1px) translateY(-50%);
+    -ms-transform:  perspective(1px) translateY(-50%);
+    -o-transform:  perspective(1px) translateY(-50%);
+    transform:  perspective(1px) translateY(-50%);
 }
 
 @mixin flex-center {

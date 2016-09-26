@@ -8,21 +8,29 @@ const TruHeader = ({currentUser}) => {
   const siteTitle = Telescope.settings.get("title", "Nova");
 
   return (
-    <div className="header-wrapper">
 
-      <header className="header">
+  <nav className="navbar navbar-fixed-top">
 
+      <div className="row">
+
+        <div className="navbar-logo col-xs-2">
           <Telescope.components.Logo logoUrl={logoUrl} siteTitle={siteTitle} />
+        </div>
 
-          <Telescope.components.SearchForm/>
+        <div className="navbar-search col-xs-6">
+          <Telescope.components.SearchForm />
+        </div>
 
-          {currentUser ? <Telescope.components.UsersMenu user={currentUser}/> : <Telescope.components.UsersAccountMenu/>}
-
+        <div className="navbar-alert col-xs-1">
           <Telescope.components.AlertDot/>
+        </div>
 
-      </header>
+        <div className="navbar-users col-xs-3">
+          {currentUser ? <Telescope.components.UsersMenu user={currentUser}/> : <Telescope.components.UsersAccountMenu/>}
+        </div>
+      </div>
+  </nav>
 
-    </div>
   )
 }
 

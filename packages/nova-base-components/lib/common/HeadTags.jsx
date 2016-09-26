@@ -26,7 +26,7 @@ class HeadTags extends Component {
 			{ charset: "utf-8" },
 			{ name: "description", content: description },
 			// responsive
-			{ name: "viewport", content:"width=device-width, initial-scale=1" },
+			{ name: "viewport", content:"width=device-width, initial-scale=1, minimal-ui" },
 			// facebook
 			{ property: "og:type", content: "article" },
 			{ property: "og:url", content: url },

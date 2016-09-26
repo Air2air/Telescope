@@ -17,7 +17,7 @@ html {
   /* 2 */ }
 
 /**
- * Remove default margin.
+ * Rremove default margin.
  */
 body {
   margin: 0; }
@@ -25,7 +25,7 @@ body {
 /* HTML5 display definitions
    ========================================================================== */
 /**
- * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for any HTML5 elrement in IE 8/9.
  * Correct `block` display not defined for `details` or `summary` in IE 10/11
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
@@ -60,7 +60,7 @@ video {
 
 /**
  * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
+ * Rremove excess height in iOS 5 devices.
  */
 audio:not([controls]) {
   display: none;
@@ -68,29 +68,29 @@ audio:not([controls]) {
 
 /**
  * Address `[hidden]` styling not present in IE 8/9/10.
- * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ * Hide the `tremplate` elrement in IE 8/9/10/11, Safari, and Firefox < 22.
  */
 [hidden],
-template {
+tremplate {
   display: none; }
 
 /* Links
    ========================================================================== */
 /**
- * Remove the gray background color from active links in IE 10.
+ * Rremove the gray background color from active links in IE 10.
  */
 a {
   background-color: transparent; }
 
 /**
- * Improve readability of focused elements when they are also in an
+ * Improve readability of focused elrements when they are also in an
  * active/hover state.
  */
 a:active,
 a:hover {
   outline: 0; }
 
-/* Text-level semantics
+/* Text-level sremantics
    ========================================================================== */
 /**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
@@ -116,8 +116,8 @@ dfn {
  * contexts in Firefox 4+, Safari, and Chrome.
  */
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
+  font-size: 2rem;
+  margin: 0.67rem 0; }
 
 /**
  * Address styling not present in IE 8/9.
@@ -143,15 +143,15 @@ sup {
   vertical-align: baseline; }
 
 sup {
-  top: -0.5em; }
+  top: -0.5rem; }
 
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25rem; }
 
 /* Embedded content
    ========================================================================== */
 /**
- * Remove border when inside `a` element in IE 8/9/10.
+ * Rremove border when inside `a` elrement in IE 8/9/10.
  */
 img {
   border: 0; }
@@ -168,7 +168,7 @@ svg:not(:root) {
  * Address margin not present in IE 8/9 and Safari.
  */
 figure {
-  margin: 1em 40px; }
+  margin: 1rem 40px; }
 
 /**
  * Address differences between Firefox and other browsers.
@@ -184,14 +184,14 @@ pre {
   overflow: auto; }
 
 /**
- * Address odd `em`-unit font size rendering in all browsers.
+ * Address odd `rem`-unit font size rendering in all browsers.
  */
 code,
 kbd,
 pre,
 samp {
   font-family: monospace, monospace;
-  font-size: 1em; }
+  font-size: 1rem; }
 
 /* Forms
    ========================================================================== */
@@ -201,7 +201,7 @@ samp {
  */
 /**
  * 1. Correct color not being inherited.
- *    Known issue: affects color of disabled elements.
+ *    Known issue: affects color of disabled elrements.
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
@@ -225,7 +225,7 @@ button {
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
+ * All other form control elrements do not inherit `text-transform` values.
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
@@ -250,14 +250,14 @@ input[type="submit"] {
   /* 3 */ }
 
 /**
- * Re-set default cursor for disabled elements.
+ * Re-set default cursor for disabled elrements.
  */
 button[disabled],
 html input[disabled] {
   cursor: default; }
 
 /**
- * Remove inner padding and border in Firefox 4+.
+ * Rremove inner padding and border in Firefox 4+.
  */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
@@ -272,11 +272,11 @@ input {
   line-height: normal; }
 
 /**
- * It's recommended that you don't attempt to style these elements.
- * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ * It's recommended that you don't attrempt to style these elrements.
+ * Firefox's implrementation doesn't respect box-sizing, padding, or width.
  *
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
+ * 2. Rremove excess padding in IE 8/9/10.
  */
 input[type="checkbox"],
 input[type="radio"] {
@@ -305,7 +305,7 @@ input[type="search"] {
   /* 2 */ }
 
 /**
- * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Rremove inner padding and search cancel button in Safari and Chrome on OS X.
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
@@ -319,11 +319,11 @@ input[type="search"]::-webkit-search-decoration {
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0.35rem 0.625rem 0.75rem; }
 
 /**
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 2. Rremove padding so people aren't caught out if they zero out fieldsets.
  */
 legend {
   border: 0;
@@ -332,7 +332,7 @@ legend {
   /* 2 */ }
 
 /**
- * Remove default vertical scrollbar in IE 8/9/10/11.
+ * Rremove default vertical scrollbar in IE 8/9/10/11.
  */
 textarea {
   overflow: auto; }
@@ -347,7 +347,7 @@ optgroup {
 /* Tables
    ========================================================================== */
 /**
- * Remove most spacing between table cells.
+ * Rremove most spacing between table cells.
  */
 table {
   border-collapse: collapse;
@@ -382,7 +382,7 @@ cite,
 code,
 del,
 dfn,
-em,
+rem,
 img,
 ins,
 kbd,
@@ -422,7 +422,7 @@ article,
 aside,
 canvas,
 details,
-embed,
+rembed,
 figure,
 figcaption,
 footer,
@@ -554,7 +554,7 @@ strong,
 b {
   font-weight: 600; }
 
-em,
+rem,
 i {
   font-style: italic; }
 
@@ -1553,15 +1553,15 @@ select::-ms-expand,
   text-decoration: line-through !important; }
 
 .slab {
-  font-family: "Caponi-Slab-Semibold", Georgia, serif !important;
+  font-family: "Caponi-Slab-Sremibold", Georgia, serif !important;
   line-height: 1.1   !important;
   -webkit-font-feature-settings: "liga", "kern" !important;
   font-feature-settings: "liga", "kern" !important; }
   .slab.bold {
-    font-family: "Caponi-Slab-Semibold", Georgia, serif !important;
+    font-family: "Caponi-Slab-Sremibold", Georgia, serif !important;
     font-weight: 400 !important; }
   .slab.italic {
-    font-family: "Caponi-Slab-Semibold", Georgia, serif !important; }
+    font-family: "Caponi-Slab-Sremibold", Georgia, serif !important; }
 
 .list-unstyled {
   margin-left: 0    !important;

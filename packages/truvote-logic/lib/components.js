@@ -3,18 +3,19 @@ This file centralizes all our custom component overrides.
 */
 import Telescope from 'meteor/nova:lib';
 
-// New components specific to TruVote
-import TruPostsApprove from "./components/TruPostsApprove.jsx";
-import TruPostsReject from "./components/TruPostsReject.jsx";
-import TruPostsTotalVotes from "./components/TruPostsTotalVotes.jsx";
-
 // Posts
-import TruPostsItem from "./components/TruPostsItem.jsx";
-import TruPostsList from "./components/TruPostsList.jsx";
+import TruPostsApprove from "./components/posts/TruPostsApprove.jsx";
+import TruPostsReject from "./components/posts/TruPostsReject.jsx";
+import TruPostsTotalVotes from "./components/posts/TruPostsTotalVotes.jsx";
+import TruCard from "./components/posts/TruCard.jsx";
+import TruPostsList from "./components/posts/TruPostsList.jsx";
+import PostsThumbnail from "./components/posts/PostsThumbnail.jsx";
 
 // Common
 import AlertDot from "./components/common/AlertDot.jsx";
 import TruFooter from "./components/common/TruFooter.jsx";
+import TruGauge from "./components/common/TruGauge.jsx";
+import Layout from "./components/common/Layout.jsx";
 import TruHeader from "./components/common/TruHeader.jsx";
 import TruIcon from "./components/common/TruIcon.jsx";
 import TruLogo from "./components/common/TruLogo.jsx";
@@ -32,18 +33,19 @@ import UsersProfile from "./components/users/TruUsersProfile.jsx";
 import UsersProfileCheck from "./components/users/TruUsersProfileCheck.jsx";
 import UsersSingle from "./components/users/TruUsersSingle.jsx";
 
-// New components specific to TruVote
+// Posts
 Telescope.components.TruPostsApprove = TruPostsApprove;
 Telescope.components.TruPostsReject = TruPostsReject;
 Telescope.components.TruPostsTotalVotes = TruPostsTotalVotes;
-
-// Posts
-Telescope.components.PostsItem = TruPostsItem;
+Telescope.components.PostsItem = TruCard;
 Telescope.components.PostsList = TruPostsList;
+Telescope.components.PostsThumbnail = PostsThumbnail;
 
 // Common
 Telescope.components.AlertDot = AlertDot;
 Telescope.components.Footer = TruFooter;
+Telescope.components.TruGauge = TruGauge;
+Telescope.components.Layout = Layout;
 Telescope.components.Header = TruHeader;
 Telescope.components.Icon = TruIcon;
 Telescope.components.Logo = TruLogo;
