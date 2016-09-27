@@ -10,7 +10,7 @@ import data from './mocks.js';
 
 const dexiCron = async function() {
   try {
-    // find all the users with a "dexi id"
+    // find all the users with a "dexi run id"
     const organizationsWithDexi = Users.find({dexi: {$exists: true}}).fetch();
 
     // loop over each to import new posts if existing
@@ -18,9 +18,6 @@ const dexiCron = async function() {
 
       const dexiRuns = organizationsWithDexi.map(org => org.dexi);
       const orgIds = organizationsWithDexi.map(org => org._id);
-
-      console.log(dexiRuns);
-      console.log(orgIds);
 
       let results = [];
 
@@ -48,7 +45,11 @@ const dexiCron = async function() {
           console.log('')
           console.log("Headers defined:", headers);
           console.log("Missing headers are marked as `-1`:", headersIndex);
-          console.log("UserId / Run:", orgIds[index], "/", dexiRuns[index]);
+          
+          const wrongUser = Users.getUser(orgIds[index]);
+          const displayName = Users.getDisplayName(wrongUser);
+
+          console.log("Username / Run:", displayName, "/", dexiRuns[index]);
         }
         
         rows.map(post => {
