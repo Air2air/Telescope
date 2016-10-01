@@ -1,40 +1,36 @@
 @import 'variables';
 @import 'colors';
-
-
-
-
-.search-form{
-  .form-group{
-    margin-bottom: 0;
-  }
-}
-
-.modal-form-title{
-  border-bottom: $border;
-  padding-bottom: $vmargin;
-  margin-bottom: $vmargin;
-  line-height: 1;
-}
-
-.input-categories{
-  .col-sm-9{
-    display: flex;
-    flex-wrap: wrap;
-    .checkbox{
-      width: 50%;
+.search-form {
+    .form-group {
+        margin-bottom: 0;
     }
-  }
 }
 
-.private{
-  text-transform: uppercase;
-  font-size: $smaller-font;
-  color: #ff0000;
+.modal-form-title {
+    border-bottom: $border;
+    padding-bottom: $vmargin;
+    margin-bottom: $vmargin;
+    line-height: 1;
 }
 
-.dropdown-item.active{
-  a{
-    color: $white;
-  }
+.input-categories {
+    .col-sm-9 {
+        display: flex;
+        flex-wrap: wrap;
+        .checkbox {
+            width: 50%;
+        }
+    }
+}
+
+.private {
+    text-transform: uppercase;
+    font-size: $smaller-font;
+    color: #ff0000;
+}
+
+.dropdown-item.active {
+    a {
+        color: $white;
+    }
 }

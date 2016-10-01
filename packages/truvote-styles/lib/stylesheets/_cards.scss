@@ -5,8 +5,7 @@ $card-header-height:60px;
 $card-footer-height:44px;
 $card-border-color:#eee;
 .row.cards {
-    & > [class^="col-"],
-    & > [class*=" col-"] {
+    & > [class^="col-"], & > [class*=" col-"] {
         padding-right: 6px;
         padding-left: 6px;
         .card {

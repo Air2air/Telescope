@@ -112,7 +112,7 @@ nav.navbar {
                     height: inherit;
                     width: $nav-avatar-div-width;
                     //background: blue;
-                    #user-dropdown img.avatar {
+                    img.avatar {
                         height: $dot-size;
                         width: $dot-size;
                         border-radius: 50%;
@@ -132,12 +132,6 @@ nav.navbar {
                     color: $text-light;
                     //transition: all .2s ease-in-out;
                     //background: gold;
-                }
-                span.caret {
-                    //display: none!important;
-                    width: 20px;
-                    height: 50px;
-                    background: green;
                 }
             }
         }

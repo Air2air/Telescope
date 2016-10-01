@@ -26,7 +26,7 @@ const UsersAvatar = ({user, size, link}) => {
 
   const avatarUrl = Users.avatar.getUrl(user);
 
-  const img = <img alt={Users.getDisplayName(user)} style={imgStyle} className="avatar m-x-auto" src={avatarUrl}/>;
+  const img = <img alt={Users.getDisplayName(user)} className="avatar m-x-auto" src={avatarUrl}/>;
   const initials = <span className="avatar-initials"><span>{Users.avatar.getInitials(user)}</span></span>;
 
   const avatar = avatarUrl ? img : initials;

@@ -1,34 +1,22 @@
 @import 'variables';
 @import 'colors';
 
-
 /*---------------- Rules --------------- */
 
-@mixin font-s ($font-size,
-$font-color) {
-    font-family: 'Domine', Georgia, Palatino, serif;
-    font-size: $font-size;
-    color: $font-color;
-}
-
-@mixin font-ss ($font-size,
-$font-color) {
+@mixin font-s ($font-size, $font-color) {
     font-family: 'Roboto', Gill Sans, Verdana, sans-serif;
     font-size: $font-size;
     color: $font-color;
 }
 
-@mixin font-ssc ($font-size,
-$font-color) {
+@mixin font-c ($font-size, $font-color) {
     font-family: 'Roboto Condensed', Arial Narrow, Arial, sans-serif;
     font-size: $font-size;
     color: $font-color;
 }
 
-html,
-body {
-    @include font-ss(14px,
-    $text-base);
+html, body {
+    @include font-s(14px, $text-base);
     -webkit-font-smoothing: antialiased;
 }
 
@@ -36,8 +24,7 @@ body {
 /*---------------- Text --------------- */
 
 p {
-    @include font-ss(1rem,
-    $text-base);
+    @include font-s(1rem, $text-base);
     padding: 4px 0;
     line-height: 2.4rem;
     letter-spacing: -0.01rem;
@@ -51,35 +38,29 @@ a {
     }
 }
 
-
 h1 {
-    @include font-s(2.5rem,
-    $text-base);
+    @include font-s(2.5rem, $text-base);
 }
 
 h2 {
-    @include font-s(2rem,
-    $text-base);
+    @include font-s(2rem, $text-base);
 }
 
 h3 {
-    @include font-s(1.6rem,
-    $text-base);
+    @include font-s(1.6rem, $text-base);
 }
 
 h4 {
-    @include font-s(1.4rem,
-    $text-base);
+    @include font-s(1.4rem, $text-base);
 }
 
 h5 {
-    @include font-s(1.2rem,
-    $text-base);
+    @include font-s(1.2rem, $text-base);
 }
 
 
-
 /*-------------- Imports ----------------*/
+
 
 /* roboto-100 - latin */
 
@@ -439,38 +420,3 @@ h5 {
     url('/assets/fonts/roboto-slab/roboto-slab-v6-latin-700.svg#RobotoSlab') format('svg');
     /* Legacy iOS */
 }
-
-
-/* domine-regular - latin */
-
-@font-face {
-    font-family: 'Domine';
-    font-style: normal;
-    font-weight: 400;
-    src: url('/assets/fonts/domine/domine-v4-latin-regular.eot');
-    /* IE9 Compat Modes */
-    src: local('Domine'), local('Domine-Regular'), url('/assets/fonts/domine/domine-v4-latin-regular.eot?#iefix') format('rembedded-opentype'), /* IE6-IE8 */
-    url('/assets/fonts/domine/domine-v4-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-    url('/assets/fonts/domine/domine-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
-    url('/assets/fonts/domine/domine-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('/assets/fonts/domine/domine-v4-latin-regular.svg#Domine') format('svg');
-    /* Legacy iOS */
-}
-
-
-/* domine-700 - latin */
-
-@font-face {
-    font-family: 'Domine';
-    font-style: normal;
-    font-weight: 700;
-    src: url('/assets/fonts/domine/domine-v4-latin-700.eot');
-    /* IE9 Compat Modes */
-    src: local('Domine Bold'), local('Domine-Bold'), url('/assets/fonts/domine/domine-v4-latin-700.eot?#iefix') format('rembedded-opentype'), /* IE6-IE8 */
-    url('/assets/fonts/domine/domine-v4-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-    url('/assets/fonts/domine/domine-v4-latin-700.woff') format('woff'), /* Modern Browsers */
-    url('/assets/fonts/domine/domine-v4-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('/assets/fonts/domine/domine-v4-latin-700.svg#Domine') format('svg');
-    /* Legacy iOS */
-}
-

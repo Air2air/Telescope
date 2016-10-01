@@ -2,10 +2,9 @@
 @import 'colors';
 //@import '../bootstrap-4.0.0-alpha.4/scss/bootstrap.scss';
 
-
 /*----------- Icon controls ------------*/
-$icon-size:40px;
 
+$icon-size:40px;
 div.icon {
     height: $icon-size;
     width: auto;
@@ -31,7 +30,7 @@ div.icon {
         float: left;
         width: 50%;
         min-width: 20px;
-        line-height:$icon-size;
+        line-height: $icon-size;
         text-align: left!important;
         font-size: 1rem;
         color: $text-base;

@@ -1,5 +1,3 @@
-
-
 /* ------ Base color --------- */
 
 $base-color: #24B574;
@@ -19,6 +17,7 @@ $text-light: lighten($text-base, 20%);
 $text-dark: mix(black, $text-base, 50%);
 
 /* ------ Icon color --------- */
+
 $icon-color: mix(white, $text-base, 50%);
 
 /* ------ Support/Oppose --------- */
@@ -36,19 +35,12 @@ $total: rgb(140, 176, 202);
     background: $oppose;
 }
 
+
 /* ------ Navbar --------- */
-$navbar-background: rgba( $white, 1 );
 
-
-
-$active-color: lighten($base-color,30%);
+$navbar-background: rgba( $white, 1);
+$active-color: lighten($base-color, 30%);
 $light-blue: #6db5ff;
 $light-yellow: #f8f7a6;
 $light-grey:#aaaaaa;
 $dark-grey:#666666;
-
-
-
-
-
-
