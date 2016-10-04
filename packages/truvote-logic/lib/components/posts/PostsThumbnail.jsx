@@ -13,3 +13,4 @@ PostsThumbnail.displayName = "PostsThumbnail";
 
 module.exports = PostsThumbnail;
 export default PostsThumbnail;
+

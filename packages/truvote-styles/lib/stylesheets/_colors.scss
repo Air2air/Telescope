@@ -7,19 +7,20 @@ $base-color: #24B574;
 //$base-color: #008ac4; // Blue
 $white: #ffffff;
 $black:#000000;
-$base-light: desaturate((mix($white, $base-color, 70%)), 20%);
+$base-light: desaturate((mix($white, $base-color, 70%)), 10%);
 $base-dark:desaturate((mix($black, $base-color, 20%)), 20%);
 
 /* ------ Text color --------- */
 
-$text-base:desaturate((mix($black, $base-color, 10%)), 60%);
+$text-base:desaturate((mix($black, $base-color, 2%)), 60%);
 $text-light:desaturate((mix($white, $base-color, 35%)), 30%);
-$text-dark:desaturate((mix($black, $base-color, 60%)), 50%);
+$text-dark:desaturate((mix($black, $base-color, 50%)), 50%);
 
 /* ------ Component Colors --------- */
 
-$panel-color:(mix($white, $base-light, 80%));
 $border-color:(mix($white, $base-light, 70%));
+$panel-color:(mix($white, $base-light, 80%));
+$panel-hover-color:(mix($white, $base-light, 60%));
 
 /* ------ Icon color --------- */
 
