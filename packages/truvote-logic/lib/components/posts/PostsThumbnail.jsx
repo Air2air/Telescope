@@ -3,7 +3,7 @@ import Posts from "meteor/nova:posts";
 
 const PostsThumbnail = ({post}) => {
   return (
-    <a href={Posts.getLink(post)} target={Posts.getLinkTarget(post)}>
+    <a href={Posts.getPageUrl(post)}>
       <img src={Posts.getThumbnailUrl(post)} />
     </a>
   )

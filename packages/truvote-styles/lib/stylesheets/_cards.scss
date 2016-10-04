@@ -1,71 +1,68 @@
 @import 'variables';
-@import 'colors';
-//@import '../bootstrap-4.0.0-alpha.4/scss/bootstrap.scss';
-$card-header-height:60px;
+$card-header-height:52px;
 $card-footer-height:44px;
-$card-border-color:#eee;
 .row.cards {
     & > [class^="col-"], & > [class*=" col-"] {
         padding-right: 6px;
         padding-left: 6px;
         .card {
             cursor: pointer;
-            border-radius: $border-radius;
+            //border-radius: $border-radius;
+            border-radius: none;
             border: 1px solid #eee;
             transition: all .2s ease-in-out;
             overflow: hidden;
             padding: 0;
             margin-top: 12px;
-            border: 1px solid $card-border-color;
+            border: 1px solid $border-color;
             //background: red;
             div.card-header {
                 height: $card-header-height;
                 padding: 0;
                 border-bottom: none;
+                background: $panel-color;
                 div.logo {
                     $header-logo-size: 30px;
                     $header-logo-padding: 10px;
                     @include flex-center;
+                    @include vertical-align;
                     float: left;
-                    text-align: center;
                     padding-left: $header-logo-padding;
                     padding-right: $header-logo-padding;
                     height: $card-header-height;
                     width: ($header-logo-padding * 2) + $header-logo-size;
                     opacity: .4;
-                    //background: gold;
+                    //background: green;
+                    margin: 0;
                     img {
                         height: $header-logo-size;
                         width: $header-logo-size;
+                        border-radius: 50%;
                     }
                 }
-                div.text {
-                    margin: 0 auto;
-                    //background: red;
+                div.header-text {
+                    //margin: 0 auto;
+                    //float: right;
                     div {
-                        $card-header-line-height: ($card-header-height * .5);
-                        height: $card-header-line-height;
-                        line-height: $card-header-line-height;
+                        height: ($card-header-height * .5);
                         text-align: center;
                         &.dept {
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 1rem;
-                            line-height: ($card-header-line-height * 1.4);
-                            color: lighten($text-dark, 20%);
-                            width: auto;
                             white-space: nowrap;
                             text-overflow: ellipsis;
+                            line-height: 2.5em;
+                            a {
+                                @include font-s(1rem, $text-light);
+                            }
+                            //background: gold;
                         }
                         &.org {
-                            font-family: 'Roboto-Medium', sans-serif;
-                            font-size: .9rem;
-                            line-height: ($card-header-line-height * .7);
-                            color: lighten($text-base, 50%);
+                            @include font-c(.9rem, $text-light);
                             white-space: nowrap;
                             text-transform: uppercase;
                             text-overflow: ellipsis;
-                            letter-spacing: 0.1rem;
+                            letter-spacing: 0.05rem;
                             font-weight: bold;
+                            //background: blue;
                         }
                     }
                 }
@@ -74,7 +71,7 @@ $card-border-color:#eee;
                 overflow: hidden;
                 height: 100px!important;
                 width: auto;
-                border-bottom: 1px solid $card-border-color;
+                border-bottom: 1px solid $border-color;
                 a {
                     img {
                         width: 100%;
@@ -90,7 +87,7 @@ $card-border-color:#eee;
                     font-size: 1.5rem;
                     width: 100%;
                     height: 90px;
-                    line-height: 1.2rem;
+                    line-height: 1.2em;
                     text-overflow: ellipsis;
                     display: table;
                     //background: lightblue;
@@ -99,7 +96,7 @@ $card-border-color:#eee;
                         vertical-align: middle;
                         //background: gold;
                         a {
-                            color: $text-light;
+                            @include font-c(1.4rem, $text-base);
                         }
                     }
                 }
@@ -115,9 +112,12 @@ $card-border-color:#eee;
                 }
             }
             div.card-footer {
+                position: realtive;
+                top: 0;
                 height: $card-footer-height;
                 padding: 0;
                 border-top: none;
+                background: $panel-color;
                 > div {
                     //text-align: center!important;
                     line-height: $card-footer-height;

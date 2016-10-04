@@ -1,35 +1,33 @@
 @import 'variables';
-@import 'colors';
 
 /*--------- Chart SVG settings --------- */
 
 
 /*--------- Charts in Cards --------- */
 
-$card-chart-width:80px; // Controls everything below
+$card-chart-height: 50px;
+$card-chart-width:100px;
 div.card-chart {
     position: relative;
-    $card-chart-height: ($card-chart-width * .5);
+    top: 0;
     height: $card-chart-height;
-    width: $card-chart-width;
-    margin: 0 auto;
+    width: 100%;
     overflow: hidden;
-    //background: rgba(250, 250, 250, 0.7);
-    div.chart-inner {
+    //background: yellow;
+    div {
+        $chard-chart-vertical-offset: -36px;
         position: absolute;
-        $card-chart-height-inner: ($card-chart-width * .7);
-        margin-top: -($card-chart-height-inner / 6);
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 0;
-        height: $card-chart-height-inner;
+        top: $chard-chart-vertical-offset;
+        height: ($card-chart-height - $chard-chart-vertical-offset);
         width: $card-chart-width;
-        //background: rgba(0, 0, 0, 0.2);
-        text {
-            font-size: ($card-chart-width/2)!important;
-            font-weight: normal!important;
-        }
+        left: 50%;
+        margin-left: -50px;
+        //background: red;
         svg {
+            text {
+                font-size: 1em!important;
+                font-weight: normal!important;
+            }
             path {
                 &:nth-of-type(1) {
                     fill: $support!important;

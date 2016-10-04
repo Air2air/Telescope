@@ -1,12 +1,10 @@
 @import 'variables';
-@import 'colors';
 
-
-.category-menu-item{
-  position: relative;
-  .categories-delete-link, .edit-category-link{
-    position: absolute;
-    top: 4px;
-    right: 5px;
-  }
+.category-menu-item {
+    position: relative;
+    .categories-delete-link, .edit-category-link {
+        position: absolute;
+        top: 4px;
+        right: 5px;
+    }
 }

@@ -1,5 +1,4 @@
 @import 'variables';
-@import 'colors';
 //////////////////////////////////////////////////////
 // Post List                                        //
 //////////////////////////////////////////////////////
@@ -46,7 +45,7 @@
             @include activeHover;
         }
         &.posts-view-active {
-            background: $light-blue;
+            
         }
     }
     .btn-group {
@@ -61,13 +60,11 @@
     margin-bottom: $vmargin;
 }
 
-.posts-load-more,
-.comments-load-more {
+.posts-load-more, .comments-load-more {
     display: block;
     text-align: center;
     @include border;
     @include border-radius;
-    font-size: $large-font;
     padding: 10px 20px;
     @include activeHover;
     width: 100%;
@@ -90,7 +87,6 @@
     padding: $vmargin 5px;
     // margin-bottom: 15px;
     &.posts-sticky {
-        background: $light-yellow;
     }
 }
 
@@ -122,9 +118,7 @@
         color: $text-light;
     }
     @include activeHover;
-    &,
-    &:active,
-    &:hover {
+    &, &:active, &:hover {
         text-decoration: none;
     }
 }
@@ -133,30 +127,7 @@
     flex-grow: 1;
 }
 
-.posts-item-title {
-    @include small {
-        margin-right: 40px;
-        font-size: $large-font;
-        margin-bottom: $vmargin/2;
-    }
-    @include medium-large {
-        @include flex-center;
-        font-size: $larger-font;
-        margin-bottom: 5px;
-    }
-    .posts-item-title-link {
-        @include small {
-            display: block;
-            margin-bottom: $vmargin/2;
-        }
-        color: $black;
-        &,
-        &:active,
-        &:hover {
-            text-decoration: none;
-        }
-    }
-}
+.posts-item-title {}
 
 .posts-categories {
     @include medium-large {
@@ -165,7 +136,6 @@
     @include flex-center;
     a {
         display: block;
-        font-size: $small-font;
         @include border;
         @include border-radius;
         margin-right: 5px;
@@ -178,15 +148,10 @@
     @include medium-large {
         @include flex-center;
     }
-    font-size: $small-font;
     .users-avatar {
         margin-right: 5px;
     }
-    .users-name,
-    .posts-item-date,
-    .posts-item-comments,
-    .posts-stats,
-    .post-actions {
+    .users-name, .posts-item-date, .posts-item-comments, .posts-stats, .post-actions {
         margin-right: $hmargin;
     }
 }
@@ -198,8 +163,7 @@
     @include flex-center;
 }
 
-.posts-item-date,
-.posts-item-comments {
+.posts-item-date, .posts-item-comments {
     @include small {
         margin-bottom: $vmargin/2;
     }
@@ -213,7 +177,6 @@
     }
     @include border;
     @include border-radius;
-    font-size: $smaller-font;
     .posts-stats-item {
         border-right: $border;
         padding: 2px 5px;
@@ -268,7 +231,6 @@
 }
 
 .posts-page-body {
-    font-size: $large-font;
     margin-bottom: $hmargin;
 }
 

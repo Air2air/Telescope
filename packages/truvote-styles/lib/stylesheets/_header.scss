@@ -1,5 +1,4 @@
 @import 'variables';
-@import 'colors';
 $navbar-height:66px;
 $navbar-bottom-margin:20px;
 $nav-logo-width: 90px;
@@ -11,7 +10,7 @@ nav.navbar {
     background: $navbar-background;
     text-align: center;
     padding: 0 30px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid $border-color;
     margin-bottom: $navbar-bottom-margin;
     /*----------- Logo ------------*/
     div.navbar-logo {
@@ -37,25 +36,25 @@ nav.navbar {
     }
     /*----------- Search ------------*/
     div.navbar-search {
-        $search-input-color: #ddd;
+        $navbar-search-background: $panel-color;
         @include flex-center;
         height: $navbar-height;
-        //background: red;
         .input-group {
             span.input-group-addon {
+                background: $navbar-search-background;
                 border: none;
                 i {
-                    font-size: .9rem;
-                    color: $search-input-color;
+                    font-size: 1.1rem;
+                    color: $text-base;
                 }
             }
-            input {
-                font-size: 1.1rem;
-                font-family: Roboto-Bold;
+            input.form-control {
                 height: ($navbar-height * 0.6);
-                background: #eee;
+                @include font-s(1.2rem, $base-dark);
+                font-weight: 500;
+                background: $navbar-search-background;
                 border: none;
-                color: $search-input-color;
+                color: $base-dark;
             }
         }
     }
@@ -73,14 +72,13 @@ nav.navbar {
                 height: $dot-size;
                 width: $dot-size;
                 cursor: pointer;
-                background: red;
+                background: $oppose;
                 border-radius: 50%;
                 text-align: center!important;
                 span {
-                    color: $white;
+                    @include font-s(1.1rem, $white);
+                    font-weight: bold;
                     line-height: $dot-size;
-                    font-size: 1.1rem;
-                    font-family: Roboto-Bold;
                 }
             }
         }
@@ -137,86 +135,3 @@ nav.navbar {
         }
     }
 }
-
-
-/*
-.header-wrapper{
-background: $header-bg;
-margin-bottom: $vmargin;
-}
-
-.header{
-@include medium-large{
-@include flex-center;
-justify-content: space-between;
-}
-padding-top: $vmargin;
-padding-bottom: $vmargin;
-}
-
-.logo{
-@include small{
-text-align: center;
-}
-@include medium-large{
-display: flex;
-align-items: baseline;
-.logo-text{
-margin-right: $hmargin;
-}
-.logo-image{
-margin-right: $hmargin;
-}
-}
-.tagline{
-font-size: 1.35rem;
-}
-}
-
-.nav{
-@include flex-center;
-@include small{
-border-top: 1px solid $medium-grey;
-margin-top: $vmargin;
-padding-top: $vmargin;
-justify-content: space-between;
-}
-@include medium-large{
-.nav-user{
-margin-right: $hmargin;
-}
-}
-.nav-new-post{
-@include small{
-
-}
-}
-}
-
-.users-account-menu, .users-menu{
-.dropdown-toggle{
-@include flex-center;
-padding: 0;
-background: none;
-img{
-margin-right: 5px;
-}
-}
-}
-
-.accounts-ui{
-padding: $vmargin;
-min-width: 240px;
-.buttons{
-.btn{
-display: block;
-width: 100%;
-text-align: center;
-margin-bottom: $vmargin;
-&:last-child{
-margin-bottom: 0;
-}
-}
-}
-}
-*/

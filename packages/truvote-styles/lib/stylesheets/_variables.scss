@@ -1,29 +1,16 @@
 @import 'colors';
-$hmargin: 10px;
-$vmargin: 15px;
-$smaller-font: 0.8rem;
-$small-font: 0.9rem;
-$medium-font: 1rem;
-$large-font: 1.25rem;
-$larger-font: 1.35rem;
-$border: 1px solid #eeeeee;
-@mixin activeHover {
-    &:hover {
-        background: $active-color;
-        color: $white;
-        border-color: $active-color;
-        text-decoration: none;
-    }
-}
+@import 'fonts';
+
+/*----- Dots -------*/
 
 $dot-size: 33px;
 
 /*----- Transforms -------*/
 
-$grow-scale-timing:.3s;
-$grow-scale-amt:1.08;
-$grow-scale-easing:ease-in-out;
-.grow {
+@mixin grow {
+    $grow-scale-timing: .3s;
+    $grow-scale-amt: 1.08;
+    $grow-scale-easing: ease-in-out;
     &:hover {
         -webkit-transition: -webkit-transform $grow-scale-timing $grow-scale-easing;
         transition: -webkit-transform $grow-scale-timing $grow-scale-easing;
@@ -35,6 +22,18 @@ $grow-scale-easing:ease-in-out;
         transform: translate($grow-scale-amt, $grow-scale-amt);
     }
 }
+
+@mixin activeHover {
+    &:hover {
+        background: $active-color;
+        color: $white;
+        border-color: $active-color;
+        text-decoration: none;
+    }
+}
+
+
+/*----- Utility Mixins -------*/
 
 @mixin vertical-align {
     position: relative;
@@ -59,4 +58,19 @@ $grow-scale-easing:ease-in-out;
     border: $border;
 }
 
+
+/* ----- Layout -------*/
+
+$hmargin: 10px;
+$vmargin: 15px;
+
+/*
+$smaller-font: 0.8rem;
+$small-font: 0.9rem;
+$medium-font: 1rem;
+$large-font: 1.25rem;
+$larger-font: 1.35rem;
+*/
+
+$border: 1px solid #eeeeee;
 $border-radius:5px;

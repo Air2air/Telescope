@@ -13,7 +13,7 @@ const TruPostsList = ({results, currentUser, hasMore, ready, count, totalCount, 
   if (!!results.length) {
     return (
       <div className="posts-list">
-        {showHeader ? <Telescope.components.PostsListHeader /> : null}
+        {/* showHeader ? <Telescope.components.PostsListHeader /> : null  */}
 
         {
           showTotalVotes ? <Telescope.components.TruPostsTotalVotes posts={results} count={count} totalCount={totalCount} /> : null

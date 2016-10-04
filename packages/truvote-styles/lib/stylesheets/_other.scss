@@ -1,10 +1,5 @@
 @import 'variables';
-@import 'colors';
-.search-form {
-    .form-group {
-        margin-bottom: 0;
-    }
-}
+
 
 .modal-form-title {
     border-bottom: $border;
@@ -25,7 +20,7 @@
 
 .private {
     text-transform: uppercase;
-    font-size: $smaller-font;
+    
     color: #ff0000;
 }
 
