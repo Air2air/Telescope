@@ -1,5 +1,4 @@
 @import 'variables';
-$card-header-height:52px;
 $card-footer-height:44px;
 .row.cards {
     & > [class^="col-"], & > [class*=" col-"] {
@@ -7,7 +6,6 @@ $card-footer-height:44px;
         padding-left: 6px;
         .card {
             cursor: pointer;
-            //border-radius: $border-radius;
             border-radius: none;
             border: 1px solid #eee;
             transition: all .2s ease-in-out;
@@ -16,147 +14,7 @@ $card-footer-height:44px;
             margin-top: 12px;
             border: 1px solid $border-color;
             //background: red;
-            div.card-header {
-                height: $card-header-height;
-                padding: 0;
-                border-bottom: none;
-                background: $panel-color;
-                transition: all 400ms ease-in-out;
-                div.logo {
-                    $header-logo-size: 30px;
-                    $header-logo-padding: 10px;
-                    @include flex-center;
-                    @include vertical-align;
-                    float: left;
-                    padding-left: $header-logo-padding;
-                    padding-right: $header-logo-padding;
-                    height: $card-header-height;
-                    width: ($header-logo-padding * 2) + $header-logo-size;
-                    opacity: .4;
-                    transition: opacity .6s ease-in-out;
-                    //background: green;
-                    img {
-                        height: $header-logo-size;
-                        width: $header-logo-size;
-                        border-radius: 50%;
-                    }
-                }
-                div.header-text {
-                    div {
-                        height: ($card-header-height * .5);
-                        text-align: center;
-                        &.dept {
-                            white-space: nowrap;
-                            text-overflow: ellipsis;
-                            line-height: 2.5em;
-                            a {
-                                @include font-s(1rem, darken($text-light,20%));
-                            }
-                            //background: gold;
-                        }
-                        &.org {
-                            @include font-c(.9rem, lighten($text-light,10%));
-                            white-space: nowrap;
-                            text-transform: uppercase;
-                            text-overflow: ellipsis;
-                            letter-spacing: 0.05rem;
-                            font-weight: bold;
-                            //background: blue;
-                        }
-                    }
-                }
-                &:hover {
-                    background: $panel-hover-color;
-                    div.logo {
-                        opacity: 1;
-                    }
-                    div.header-text {
-                        div {
-                            &.dept {
-                                a {
-                                    @include font-s(1rem, $text-base);
-                                }
-                            }
-                            &.org {
-                                @include font-c(.9rem, $text-base);
-                            }
-                        }
-                    }
-                }
-            }
-            div.card-image {
-                position: relative;
-                top: 0;
-                overflow: hidden;
-                height: 100px!important;
-                width: auto;
-                border-bottom: 1px solid $border-color;
-                a {
-                    img {
-                        width: 100%;
-                        @include vertical-align;
-                    }
-                }
-                div.card-date {
-                    $card-date-height: 36px;
-                    position: absolute;
-                    bottom: 0;
-                    right: 0;
-                    width: 50%;
-                    height: $card-date-height;
-                    text-align: center;
-                    font-size: 1rem;
-                    line-height: $card-date-height;
-                    text-overflow: ellipsis;
-                    color: lighten($base-light,10%);
-                    background: rgba(darken($base-dark,20%), 0.7);
-                    border-bottom:3px solid $base-color;
-                }
-            }
-            div.card-block {
-                padding: 8px;
-                div.card-title {
-                    position: relative;
-                    padding: 0;
-                    font-size: 1.5rem;
-                    width: 100%;
-                    height: 90px;
-                    line-height: 1.2em;
-                    text-overflow: ellipsis;
-                    display: table;
-                    //background: lightblue;
-                    span {
-                        display: table-cell;
-                        vertical-align: middle;
-                        //background: gold;
-                        a {
-                            @include font-c(1.4rem, $text-base);
-                        }
-                    }
-                }
-            }
-            div.card-footer {
-                position: realtive;
-                top: 0;
-                height: $card-footer-height;
-                padding: 0;
-                border-top: none;
-                background: $panel-color;
-                > div {
-                    //text-align: center!important;
-                    line-height: $card-footer-height;
-                    height: $card-footer-height;
-                    padding: 0;
-                    margin: 0;
-                    //background: gold;
-                    span {
-                        height: $card-footer-height;
-                        line-height: $card-footer-height;
-                        margin: 0;
-                        //background: gold;
-                    }
-                }
-            }
         }
+
     }
 }

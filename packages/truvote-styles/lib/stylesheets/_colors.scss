@@ -1,10 +1,8 @@
 /* ------ Base color --------- */
 
 
-/* ------ Base Colors --------- */
-
-$base-color: #24B574;
-//$base-color: #008ac4; // Blue
+//$base-color: #24B574;
+$base-color: #00b1cb; // Blue
 $white: #ffffff;
 $black:#000000;
 $base-light: desaturate((mix($white, $base-color, 70%)), 10%);

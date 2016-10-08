@@ -1,0 +1,50 @@
+@import 'variables';
+@import 'colors';
+@mixin metrics($height, $font-size) {
+    position: relative;
+    top: 0;
+    height: $height;
+    width: 100%;
+    padding: 0;
+    border-top: none;
+    overflow: hidden;
+    //background: lightblue;
+    .chart-wrapper {
+        margin: 0 auto;
+        height: $height;
+        //background: red;
+        .chart-value {
+            min-width: 20%;
+            height: $height;
+            //line-height: ($height * .5);
+            line-height: 2em;
+            font-size: ($font-size * 2);
+            letter-spacing: -0.04em;
+            //background: lightblue;
+            &.left {
+                color: $oppose;
+                text-align: right;
+            }
+            &.right {
+                color: $support;
+                text-align: left;
+            }
+        }
+
+    }
+}
+
+div.card {
+    div.footer {
+        div.metrics {
+            @include metrics(80px, 1em);
+        }
+    }
+}
+
+div.detail {
+    div.metrics {
+        @include metrics(80px, 1em);
+    }
+}
+

@@ -1,0 +1,28 @@
+@import 'variables';
+@import 'colors';
+@mixin date($height, $width, $font-size) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: $height;
+    width: $width;
+    text-align: center;
+    font-size: $font-size;
+    line-height: $height;
+    text-overflow: ellipsis;
+    color: lighten($base-light, 10%);
+    background: rgba(darken($base-dark, 20%), 0.7);
+    border-left: 3px solid $base-color;
+}
+
+div.card {
+    div.date {
+        @include date(36px, 50%, 1rem);
+    }
+}
+
+div.detail {
+    div.date {
+        @include date(44px, 25%, 1.2rem);
+    }
+}

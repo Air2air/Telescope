@@ -21,11 +21,11 @@ class TruCard extends Telescope.components.PostsItem {
     return (
   <div className="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
     <div className="card text-xs-center">
-      <div className="card-header">
-        <div className="logo col-xs-3">
+      <div className="org-header">
+        <div className="logo">
           {post.user? <Telescope.components.UsersAvatar user={post.user} /> : null}
         </div>
-        <div className="header-text col-xs-8 text-xs-center">
+        <div className="text">
             <div className="dept">
               {post.user? <Telescope.components.UsersName user={post.user}/> : null}
             </div>
@@ -34,14 +34,14 @@ class TruCard extends Telescope.components.PostsItem {
             </div>
         </div>
       </div>
-      <div className="card-image">
+      <div className="content-image">
         {post.thumbnailUrl ? <Telescope.components.PostsThumbnail post={post}/> : null} 
-        <div className="card-date">
+        <div className="date">
           <FormattedRelative value={post.postedAt}/>
         </div>
       </div>
       <div className="card-block">
-        <div className="card-title">
+        <div className="title">
           <span>
             <Link to={Posts.getPageUrl(post)} className="posts-item-title-link">
               {post.title}
@@ -55,15 +55,15 @@ class TruCard extends Telescope.components.PostsItem {
       */}
 
       </div>
-      <div className="card-footer">
+      <div className="footer">
         <div className="col-xs-6">
           <div className="icon">
             {this.renderCommenters()}
           </div>
         </div>
         <div className="col-xs-6">
-          <div className="card-chart">
-            <Telescope.components.TruGauge/>
+          <div className="chart">
+              <Telescope.components.TruGauge/>
           </div>
         </div>
       </div>

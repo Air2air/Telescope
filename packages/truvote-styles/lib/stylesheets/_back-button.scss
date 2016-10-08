@@ -1,0 +1,28 @@
+@import 'variables';
+@import 'colors';
+@mixin back-button($height, $width, $font-size) {
+    @include flex-center;
+    float: left;
+    height: height;
+    width: $width;
+    line-height: $height;
+    //background: blue;
+    a {
+        font-size: $font-size;
+        text-transform: uppercase;
+        i {
+            float: left;
+            height: inherit;
+            line-height: inherit;
+            font-size: ($font-size * 2);
+            margin-right: ($height * .15);
+            //background: red;
+        }
+    }
+}
+
+div.detail {
+    div.back-button {
+        @include back-button(70px, 300px, 1.2rem);
+    }
+}

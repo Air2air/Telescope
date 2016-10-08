@@ -1,0 +1,319 @@
+@import 'variables';
+$detail-header-height:90px;
+div.detail {
+    div.detail-header {
+        width: 100%;
+        height: $detail-header-height;
+        padding: 0;
+        border-bottom: none;
+        background: $panel-color;
+        transition: all 400ms ease-in-out;
+
+    }
+    div.content-image {
+        position: relative;
+        top: 0;
+        overflow: hidden;
+        height: 200px!important;
+        width: auto;
+        border-bottom: 1px solid $border-color;
+        img {
+            width: 100%;
+            @include vertical-align;
+        }
+        div.detail-date {
+            $detail-date-height: 36px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 30%;
+            height: $detail-date-height;
+            text-align: center;
+            font-size: 1rem;
+            line-height: $detail-date-height;
+            text-overflow: ellipsis;
+            color: lighten($base-light, 10%);
+            background: rgba(darken($base-dark, 20%), 0.7);
+            border-bottom: 3px solid $base-color;
+        }
+    }
+    div.detail-title {
+        padding: 30px;
+        text-align: center;
+        @include font-c(4em, $text-base);
+    }
+}
+
+//////////////////////////////////////////////////////
+// Post List                                        //
+//////////////////////////////////////////////////////
+.posts-list-header {
+    @include medium-large {
+        @include flex-center;
+        justify-content: space-between;
+    }
+    margin-bottom: $vmargin;
+}
+
+.post-lists-header-categories {
+    @include small {
+        margin: 0 auto;
+        margin-bottom: $vmargin;
+        text-align: center;
+        .btn-group {
+            margin-right: 0;
+            width: 100%;
+        }
+        .dropdown-toggle {
+            width: 100%;
+        }
+    }
+}
+
+.posts-views {
+    @include small {
+        margin-bottom: $vmargin;
+        .btn-group {
+            margin-right: 0;
+            width: 100%;
+        }
+        .dropdown-toggle {
+            width: 100%;
+        }
+    }
+    a.btn {
+        @include border;
+        // @include border-radius;
+        // padding: 3px 5px;
+        // margin-right: 5px;
+        &.posts-view-inactive {
+            @include activeHover;
+        }
+        &.posts-view-active {}
+    }
+    .btn-group {
+        margin-right: $hmargin;
+    }
+}
+
+.posts-list-content {
+    border-top: $border;
+    // padding-top: 15px;
+    // margin-top: 15px;
+    margin-bottom: $vmargin;
+}
+
+.posts-load-more, .comments-load-more {
+    display: block;
+    text-align: center;
+    @include border;
+    @include border-radius;
+    padding: 10px 20px;
+    @include activeHover;
+    width: 100%;
+    background: $white;
+    color: $active-color;
+}
+
+.posts-load-more-loading {
+    padding: 21px 0;
+}
+
+//////////////////////////////////////////////////////
+// Post Itrem                                        //
+//////////////////////////////////////////////////////
+.posts-item {
+    @include medium-large {
+        @include flex-center;
+    }
+    border-bottom: $border;
+    padding: $vmargin 5px;
+    // margin-bottom: 15px;
+    &.posts-sticky {}
+}
+
+.posts-item-vote {
+    @include small {
+        float: right;
+    }
+    @include medium-large {
+        margin-right: $hmargin;
+    }
+}
+
+.upvote-button {
+    @include border;
+    @include border-radius;
+    @include flex-center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3px 5px;
+    .icon {
+        text-align: center;
+        display: block;
+    }
+    .vote-count {
+        text-align: center;
+        display: block;
+    }
+    .voted & {
+        color: $text-light;
+    }
+    @include activeHover;
+    &, &:active, &:hover {
+        text-decoration: none;
+    }
+}
+
+.posts-item-content {
+    flex-grow: 1;
+}
+
+.posts-item-title {}
+
+.posts-categories {
+    @include medium-large {
+        margin-left: 5px;
+    }
+    @include flex-center;
+    a {
+        display: block;
+        @include border;
+        @include border-radius;
+        margin-right: 5px;
+        padding: 2px 6px;
+        @include activeHover;
+    }
+}
+
+.posts-item-meta {
+    @include medium-large {
+        @include flex-center;
+    }
+    .users-avatar {
+        margin-right: 5px;
+    }
+    .users-name, .posts-item-date, .posts-item-comments, .posts-stats, .post-actions {
+        margin-right: $hmargin;
+    }
+}
+
+.posts-item-user {
+    @include small {
+        margin-bottom: $vmargin/2;
+    }
+    @include flex-center;
+}
+
+.posts-item-date, .posts-item-comments {
+    @include small {
+        margin-bottom: $vmargin/2;
+    }
+    color: $text-light;
+}
+
+.posts-stats {
+    @include small {
+        margin-bottom: $vmargin/2;
+        display: inline-block;
+    }
+    @include border;
+    @include border-radius;
+    .posts-stats-item {
+        border-right: $border;
+        padding: 2px 5px;
+        display: inline-block;
+        &:last-child {
+            border: none;
+        }
+    }
+}
+
+.post-actions {
+    @include flex-center;
+}
+
+.posts-commenters {
+    @include small {
+        display: none;
+    }
+    @include flex-center;
+}
+
+.posts-commenters-avatars {
+    display: flex;
+    .users-avatar {
+        margin-right: $hmargin;
+    }
+}
+
+.posts-thumbnail {
+    @include small {
+        float: left;
+    }
+    display: block;
+    margin-right: $hmargin;
+    img {
+        display: block;
+        height: 50px;
+        width: auto;
+    }
+}
+
+//////////////////////////////////////////////////////
+// Post Page                                        //
+//////////////////////////////////////////////////////
+.posts-page {
+    .posts-item {
+        @include border-radius;
+        border: $border;
+        padding: $hmargin;
+        margin-bottom: $vmargin;
+    }
+}
+
+.posts-page-body {
+    margin-bottom: $hmargin;
+}
+
+//////////////////////////////////////////////////////
+// Other Elrements                                   //
+//////////////////////////////////////////////////////
+.posts-day {
+    margin-bottom: $vmargin * 2;
+    .posts-load-more {
+        border: none;
+        padding: 0;
+        &:hover {
+            background: inherit;
+            color: inherit;
+            border: inherit;
+        }
+    }
+    .posts-no-results {
+        margin-top: $vmargin;
+    }
+}
+
+.posts-edit-form-header {
+    @include flex-center;
+    justify-content: space-between;
+}
+
+.posts-edit-form-admin {
+    @include flex-center;
+    justify-content: space-between;
+    margin-bottom: $vmargin * 2;
+}
+
+//////////////////////////////////////////////////////
+// Tru.Vote customs                                 //
+//////////////////////////////////////////////////////
+.posts-item-supports {
+    @include flex-center;
+    margin-left: $hmargin;
+    margin-right: $hmargin;
+    > *:first-child {
+        margin-right: $hmargin;
+    }
+}

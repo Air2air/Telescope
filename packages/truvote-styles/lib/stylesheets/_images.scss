@@ -1,0 +1,28 @@
+@import 'variables';
+@import 'colors';
+@mixin content-image($height, $width) {
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: $height!important;
+    width: $width;
+    border-bottom: 1px solid $border-color;
+    //background: red;
+    img {
+        width: 100%;
+        @include vertical-align;
+    }
+}
+
+div.card {
+    div.content-image {
+        @include content-image(120px, 100%);
+    }
+}
+
+div.detail {
+    div.content-image {
+        @include content-image(220px, 100%);
+    }
+}

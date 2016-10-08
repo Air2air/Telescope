@@ -1,0 +1,35 @@
+@import 'variables';
+@import 'colors';
+
+@mixin title($font-size, $height) {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: $height;
+    text-overflow: ellipsis;
+    display: table;
+    text-align: center;
+    //background: lightblue;
+    span {
+        display: table-cell;
+        vertical-align: middle;
+        @include font-c($font-size, $text-base);
+        line-height: 1.2em;
+        letter-spacing: -0.03em;
+        a {
+            color: $text-base;
+        }
+    }
+}
+
+div.card {
+    div.title {
+        @include title(1.8rem, 90px);
+    }
+}
+
+div.detail {
+    div.title {
+        @include title(3rem, 120px);
+    }
+}

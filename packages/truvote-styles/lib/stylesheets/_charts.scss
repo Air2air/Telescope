@@ -1,44 +1,44 @@
 @import 'variables';
+@import 'colors';
 
-/*--------- Chart SVG settings --------- */
-
-
-/*--------- Charts in Cards --------- */
-
-$card-chart-height: 50px;
-$card-chart-width:100px;
-div.card-chart {
-    position: relative;
-    top: 0;
-    height: $card-chart-height;
-    width: 100%;
-    overflow: hidden;
-    //background: yellow;
-    div {
-        $chard-chart-vertical-offset: -36px;
-        position: absolute;
-        top: $chard-chart-vertical-offset;
-        height: ($card-chart-height - $chard-chart-vertical-offset);
-        width: $card-chart-width;
-        left: 50%;
-        margin-left: -50px;
-        //background: red;
-        svg {
-            text {
-                font-size: 1em!important;
-                font-weight: normal!important;
+@mixin chart($width, $font-size) {
+    //$chart-vertical-offset: -($height * .5);
+    //position: absolute;
+    //top: $chart-vertical-offset;
+    width: $width;
+    height: ($width * 0.8);
+    text-align: center;
+    //background: gray;
+    svg {
+        position: relative;
+        top: -($width * 0.2);
+        text {
+            @include font-s($font-size, $text-light);
+            font-size: $font-size!important;
+            font-weight: normal!important;
+        }
+        path {
+            &:nth-of-type(1) {
+                fill: $support!important;
             }
-            path {
-                &:nth-of-type(1) {
-                    fill: $support!important;
-                }
-                &:nth-of-type(2) {
-                    fill: $oppose!important;
-                }
-            }
-            text:nth-of-type(1) {
-                display: none;
+            &:nth-of-type(2) {
+                fill: $oppose!important;
             }
         }
+        text:nth-of-type(1) {
+            display: none;
+        }
+    }
+}
+
+div.card {
+    div.chart {
+        @include chart(100px, 1em);
+    }
+}
+
+div.detail {
+    div.chart {
+        @include chart(160px, 1.2em);
     }
 }

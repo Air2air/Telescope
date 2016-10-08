@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tru.Vote</title>
+    <meta name="description" content="">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- CSS -->
+    <link rel="stylesheet" href=".meteor/local/build/programs/web.browser/merged-stylesheets.css">
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="../mockup/js/raphael-2.1.4.min.js"></script>
+    <script src="../mockup/js/justgage.js"></script>
+    <script src="../mockup/js/charts.js"></script>
+</head>
+
+<body>
+    <div class="wrapper container-fluid" id="wrapper" data-reactroot="" data-reactid="1">
+        <div data-reactid="2">
+            <!-- react-empty: 3 -->
+        </div>
+        <!-- react-empty: 4 -->
+        <nav class="navbar navbar-fixed-top" data-reactid="5">
+            <div class="row" data-reactid="6">
+                <div class="navbar-logo col-xs-2" data-reactid="7">
+                    <div class="inner m-x-auto" data-reactid="8">
+                        <a href="/" data-reactid="9"><img src="public/assets/images/brand/logo-round.svg" alt="Tru.Vote" data-reactid="10" data-pin-nopin="true"></a>
+                    </div>
+                </div>
+                <div class="navbar-search col-xs-6" data-reactid="11">
+                    <form data-reactid="12">
+                        <div class="input-group" data-reactid="13"><span class="input-group-addon" data-reactid="14"><i class="fa fa-search" data-reactid="15"></i></span>
+                            <input type="text" class="form-control" name="searchQuery" value="" placeholder="Search" id="frc-searchQuery-1088" data-reactid="16"> </div>
+                    </form>
+                </div>
+                <div class="navbar-alert col-xs-1" data-reactid="17">
+                    <div class="m-x-auto" data-reactid="18">
+                        <a href="/" data-reactid="19">
+                            <div class="inner grow" data-reactid="20"><span data-reactid="21">4</span></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-users col-xs-3" data-reactid="22">
+                    <div class="dropdown btn-group" data-reactid="23">
+                        <button id="user-dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-default" data-reactid="24">
+                            <div class="nav-avatar-div" data-reactid="25"><img alt="Air2air" class="avatar m-x-auto" src="https://secure.gravatar.com/avatar/6cd788a9989916fb3e26c15a1390c681?size=200&amp;default=mm" data-reactid="26"></div>
+                            <div class="nav-avatar-name" data-reactid="27">Air2air</div>
+                            <!-- react-text: 28 -->
+                            <!-- /react-text --><span class="caret" data-reactid="29"></span></button>
+                        <ul role="menu" class="dropdown-menu" aria-labelledby="user-dropdown" data-reactid="30">
+                            <li role="presentation" class="dropdown-item" data-reactid="31"><a action="push" href="/users/air2air" role="menuitem" tabindex="-1" data-reactid="32"><span data-reactid="33">Profile</span></a></li>
+                            <li role="presentation" class="dropdown-item" data-reactid="34"><a action="push" href="/account" role="menuitem" tabindex="-1" data-reactid="35"><span data-reactid="36">Edit Account</span></a></li>
+                            <li role="presentation" class="dropdown-item" data-reactid="37"><a role="menuitem" tabindex="-1" href="" data-reactid="38"><span data-reactid="39">Log Out</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="flash-messages" data-reactid="40"></div>
+        <div class="posts-page detail">
+            <div>
+                <!-- react-empty: 1025 -->
+            </div>
+            <div class="header">
+                <div class="col-xs-6">
+                    <div class="back-button">
+                        <a href="#"> <i class="fa fa-chevron-left"></i> Back to results </a>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="org-header pull-right">
+                        <div class="logo">
+                            <a href="/users/bruce"> <img alt="Public Works Dept" src="public/assets/images/org-logos/ca-ci-belmont.png"> </a>
+                        </div>
+                        <div class="text">
+                            <div class="dept"> <a class="users-name" href="/users/bruce">
+                                    Public Works Dept
+                                </a> </div>
+                            <div class="org"> City of Belmont </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-image"> <img src="http://i.embed.ly/1/image/crop?url=http%3A%2F%2Fwww.belmont.gov%2FHome%2FShowImage%3Fid%3D3731%26t%3D635548624434570000&amp;key=a72afcf7d6274ca0940faf6842ce7060&amp;width=200&amp;height=125">
+                <div class="date"> <span>14 days ago</span> </div>
+            </div>
+            <div class="title"> <span>
+                    Clear Channel Outdoor Digital Billboard
+                <span>
+            </div>
+            <div class="metrics text-xs-center">
+                <div class="col-xs-2">
+                    <div class="icon icon-comments">
+                        <a href="/posts/t2zTn7HcmAcYRtEth/merry-moppet-preschool-and-belmont-oaks-academy-mm-boa"> <i class="fa fa-comment" aria-hidden="true"></i>
+                            <div class="value">3</div>
+                            <div class="sr-only">Comments</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="icon icon-shares">
+                        <a href="/posts/t2zTn7HcmAcYRtEth/merry-moppet-preschool-and-belmont-oaks-academy-mm-boa"> <i class="fa fa-share" aria-hidden="true"></i>
+                            <div class="value">7</div>
+                            <div class="sr-only">Shares</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-4 text-xs-center">
+                    <table class="chart-wrapper">
+                        <tbody>
+                            <tr>
+                                <td class="chart-value left">12</td>
+                                <td>
+                                    <div id="gauge" class="chart"></div>
+                                </td>
+                                <td class="chart-value right">7</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                        <script>
+                          var g = new JustGage({
+                            id: "gauge",
+                            value: 67,
+                            hideMinMax:true,
+                            relativeGaugeSize:false,
+                            min: 0,
+                            max: 100,
+                            title: null
+                          });
+                        </script>
+                    </div>
+                <div class="col-xs-3"> Leaderboard for this issue </div>
+            </div>
+        </div>
+
+<p> Should include:
+    <ul>
+        <li>Org author that feedback will be seen by</li>
+        <li>My actions on this issue</li>
+        <li>Leaderboard: defined by? </li>
+        <li>Updates: new comments and votes.</li>
+    </ul>
+</p>
+
+
+    <div class="posts-page-body">
+        <p>Clear Channel Outdoor Digital Billboard Project -- 1385 Shoreway Road</p>
+        <p>Project Summary:</p>
+        <p>The Project involves construction and operation of one new double-sided outdoor advertising LED billboard on the City-owned pump station property that would be oriented toward traffic along adjacent U.S. 101. Each LED display would be 48 feet wide by 14 feet tall mounted on a column so that the overall height is approximately 60 feet above grade. The two display faces will be oriented in a “V” shape such that the displays face the two directions of highway traffic.</p>
+        <p>Consistent with City and Caltrans goals to reduce the overall number of billboards, particularly along U.S. 101 and El Camino Real, approval of the proposed digital billboard will include an agreement to remove other static billboards within the City of Belmont. The removal of other billboards in order to place a new billboard is facilitated through a “Relocation Agreement”. In coordination with the City, the Clear Channel Outdoor proposes removal of eight billboard faces, as follows: four 12 foot by 25 foot billboard faces along U.S. 101 (and Shoreway Road), and four billboard faces along El Camino Real: a double-sided 12 foot by 25 foot billboard, and two single-facing signs sized 12 feet by 25 feet and 14 feet by 48 feet, respectively.</p>
+        <p>The public comment period for the Draft Environmental Study occurred from December 23, 2014 to January 22, 2015; no public comments were received regarding the environmental study.</p>
+        <p>Public Hearings for the project are anticipated in July and August 2015.</p>
+        <p>Contact Information:</p>
+        <ul>
+            <li><a href="mailto:cdemelo@belmont.gov?subject=Clear Channel Digital Billboard Project">Carlos de Melo</a> (Community Development Director), <a href="http://www.belmont.gov/Home/Components/StaffDirectory/StaffDirectory/156/178?alpha=D">contact information</a></li>
+        </ul>
+        <p>Supporting Documentations:</p>
+        <ul>
+            <li><a href="http://www.belmont.gov/home/showdocument?id=11247">Initial Study/Mitigated Negative Declaration</a></li>
+            <li><a href="http://www.belmont.gov/home/showdocument?id=12430">Mitigation Monitoring and Reporting Program (MMRP)</a></li>
+            <li><a href="https://www.belmont.gov/home/showdocument?id=12428">Zoning</a></li>
+            <li><a href="https://www.belmont.gov/home/showdocument?id=12426">Tree</a></li>
+        </ul>
+        <p>The following meetings have agenda items related to this topic:</p>
+        <ul>
+            <li><a href="https://www.belmont.gov/city-hall/city-government/city-meetings/-item-2748">July 14, 2015 - Planning Commission Meeting</a></li>
+        </ul>
+        <p>Images/Maps:</p>
+        <ul>
+            <li><a href="https://www.belmont.gov/home/showdocument?id=11245">Aerial Map</a></li>
+            <li>Site Plan: <a href="https://www.belmont.gov/home/showdocument?id=11251">Overview</a> | <a href="https://www.belmont.gov/home/showdocument?id=11249">Elevations</a></li>
+            <li>
+                <p>Renderings:</p>
+                <p>North Face</p>
+                <p>South Face</p>
+            </li>
+        </ul>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Community Development Major Projects:</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <a href="http://www.belmont.gov/city-hall/community-development/major-projects"></a>
+                        </p>
+                        <p>
+                            <a href="http://www.belmont.gov/city-hall/city-maps/map-index-gis-data/major-projects"></a>
+                        </p>
+                        <p>[](</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="posts-comments-thread">
+        <h4 class="posts-comments-thread-title"><span>Comments</span></h4>
+                <div class="comments-list">
+                    <p><span>No comments to display.</span></p>
+                </div>
+                <div class="posts-comments-thread-new">
+                    <h4><span>New Comment</span></h4>
+                    <div class="comments-new-form">
+                        <div class="document-new">
+                            <form>
+                                <div class="form-errors"></div>
+                                <div class="form-section">
+                                    <div class="input-body">
+                                        <textarea class="form-control" name="body" datatype="function String() { [native code] }" rows="3" id="frc-body-1037750206"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary"><span>Submit</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer" data-reactid="483"><a href="http://telescopeapp.org" target="_blank" data-reactid="484"><span data-reactid="485">Powered by Telescope</span></a></div>
+        </div>
+        <div class="container-fluid content">
+            <hr>
+            <h4>Components</h4>
+            <div class="col-xs-12 alert alert-success">
+                <ul>
+                    <li><strong>Dashboard structure</strong></li>
+                    <li>Dashboard view should be a header with all the icons, and they show different views below.</li>
+                    <li>Access to it is from any icon.</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 alert alert-success">
+                <div class="col-xs-2 text-xs-center">
+                    <div class="chart-sm">
+                        <div id="user-score-1" class="chart"> </div>
+                    </div>
+                    <div class="chart-md">
+                        <div id="user-score-2" class="chart"> </div>
+                    </div>
+                    <script type="text/javascript">
+                    showCountChart("user-score-1", 46, 84);
+                    showCountChart("user-score-2", 34, 14);
+
+                    </script>
+                </div>
+                <div class="col-xs-10">
+                    <h4>My Score</strong></h4>
+                    <li>Same as the leaderboard component</li>
+                    <li>Persistent everywhere except profile</li>
+                    <li>Rates and Reports my Votes, Comment Ratings, Shares on the current section</li>
+                    <li>Comprises the top portion of the dashboard</li>
+                    <li>Should go to a list view of Issues below</li>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="clearfix"></div>
+            <div class="col-xs-12 alert alert-success">
+                <div class="col-xs-2">
+                    <div class="dot-control">
+                        <div class="dot-value"> 4 </div>
+                        <div class="dot-desc"> Issue Updates </div>
+                    </div>
+                </div>
+                <div class="col-xs-10">
+                    <h4>Issue Updates</h4>
+                    <li>Updates to Issues, Tags and Orgs I am following</li>
+                    <li>Include new comments and votes.</li> Returns list view of issues. </div>
+            </div>
+            <div class="col-xs-12 alert alert-success">
+                <div class="col-xs-2">
+                    <div class="dot-control active">
+                        <div class="dot-value"> 4 </div>
+                        <div class="dot-desc"> Alerts </div>
+                    </div>
+                </div>
+                <div class="col-xs-10">
+                    <h4>Alerts</h4>
+                    <li>Something you need to fill in</li>
+                    <li>Component alerts: An issue has been swayed, etc. </li>
+                    <p>Uses the existing header alert button. The links are conditional and go to the appropriate spot on the dashboard, with a result list view below. </p>
+                </div>
+            </div>
+            <div class="col-xs-12 alert alert-success">
+                <div class="col-xs-2">
+                    <div class="dot-control">
+                        <div class="dot-value"> 4 </div>
+                        <div class="dot-desc"> Following </div>
+                    </div>
+                </div>
+                <div class="col-xs-10">
+                    <li>Search result list of issues I am following</li>
+                    <p>Accessed from the dashboard, with a result list view below. </p>
+                </div>
+            </div>
+            <div class="col-xs-12 alert alert-success">
+                <ul>
+                    <li><strong>Sway Issue</strong></li>
+                    <li>How many votes/shares needed to sway issue</li>
+                    <li>Button to sway issue</li>
+                    <li>List Issues that I have swayed</li>
+                    <li>Users I have brought in to sway issue</li>
+                    <li>Comment upvotes that have swayed issue</li>
+                    <li>If your opinion is supported, show how many shares you need to maintain your margin. suggest sharing or comments.</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 alert alert-success">
+                <ul>
+                    <li><strong>Leaderboard</strong></li>
+                    <li>Global for User, Org, Issue</li>
+                    <li>Shows Votes,Comments, Shares</li>
+                    <li>Based on Comment ratings and shares</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 alert alert-success">
+                <ul>
+                    <li><strong>Confirmation</strong></li>
+                    <li>Show Sway Issue component at least</li>
+                    <li>Perhaps include most dashboard components?</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 alert alert-success">
+                <ul>
+                    <li><strong>Related Issues</strong></li>
+                    <li>Cards related to current issue detail view</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 alert alert-success">
+                <ul>
+                    <li><strong>Issue Tags</strong></li>
+                    <li>Tags related to current issue detail view</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 alert alert-warning">
+                <h4>Components in User View</h4>
+                <hr>
+                <ul>
+                    <li><strong>Persistent</strong></li>
+                    <li>My Participation Component</li>
+                </ul>
+                <ul>
+                    <li><strong>Dashboard</strong></li>
+                    <li>Includes all components.</li>
+                </ul>
+                <ul>
+                    <li><strong>Search result list from searching an Org</strong></li>
+                    <li>Leaderboard</li>
+                    <li>Org Participation Component</li>
+                </ul>
+                <ul>
+                    <li><strong>Issue Detail</strong></li>
+                    <li>Sway issue, Leaderboard(issue),</li>
+                </ul>
+            </div>
+            <h4>Components in Org View</h4>
+            <hr>
+            <div class="alert alert-info col-xs-6">
+                <ul>
+                    <li><strong>Compare Departments Component</strong></li>
+                    <li>Votes, Comments, Shares</li>
+                    <li>On Issue, Org, Leaderboard</li>
+                </ul>
+            </div>
+        </div>
+</body>
+
+</html>
+
