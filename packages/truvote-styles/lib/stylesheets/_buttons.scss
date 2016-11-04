@@ -1,24 +1,5 @@
 @import 'variables';
-
-
-/*
-.btn {
-    $button-height:80px;
-    height:$button-height;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: .9rem;
-    color: #fff;
-    letter-spacing: 0.04rem;
-    text-transform: uppercase;
-    line-height: $button-height;
-    padding: 0;
-    .fa {
-        font-size: .9rem;
-        color: fade(#fff, 50%);
-    }
-    */
-
+@import 'colors';
 .btn-support {
     color: $white;
     background: $support;
@@ -29,7 +10,10 @@
     background: $oppose;
 }
 
-.btn-total {
-    color: $white;
-    background: $total;
+.btn-back {
+    color: $text-light;
+    background: $white;
+    &:hover {
+        background:$panel-color;
+    }
 }

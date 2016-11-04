@@ -1,0 +1,100 @@
+@import 'variables';
+@import 'colors';
+
+/* */
+
+.action-card {
+    $div-height:40px;
+    $icon-size:1.3rem;
+    $icon-value-font-size:1.3rem;
+    $icon-color:$text-light;
+    height: $icon-size;
+    width: auto;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    padding: 0;
+    //background: blue;
+    i.fa {
+        padding: 0 6px 0 0;
+        float: left;
+        width: 50%;
+        min-width: 16px;
+        text-align: right;
+        height: $div-height;
+        line-height: $div-height;
+        font-size: $icon-size;
+        color: $icon-color;
+        //background: gold;
+    }
+    
+    div.value {
+        padding: 0;
+        float: left;
+        width: 50%;
+        min-width: 20px;
+        @include font-s($icon-value-font-size, $icon-color);
+        line-height: $div-height;
+        text-align: left!important;
+        //background: red;
+    }
+    &.active {}
+    &:hover {
+        > div {
+            i.fa {
+                color: darken($icon-color, 10%);
+            }
+            div.value {
+                color: darken($icon-color, 10%);
+            }
+        }
+    }
+}
+
+
+.action-detail {
+    $div-height:40px;
+    $icon-size:1.3rem;
+    $icon-value-font-size:1.3rem;
+    $icon-color:$text-light;
+    height: $icon-size;
+    width: auto;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    padding: 0;
+    //background: blue;
+    i.fa {
+        padding: 0 6px 0 0;
+        float: left;
+        width: 50%;
+        min-width: 16px;
+        text-align: right;
+        height: $div-height;
+        line-height: $div-height;
+        font-size: $icon-size;
+        color: $icon-color;
+        //background: gold;
+    }
+    div.value {
+        padding: 0;
+        float: left;
+        width: 50%;
+        min-width: 20px;
+        @include font-s($icon-value-font-size, $icon-color);
+        line-height: $div-height;
+        text-align: left!important;
+        //background: red;
+    }
+    &.active {}
+    &:hover {
+        > div {
+            i.fa {
+                color: darken($icon-color, 10%);
+            }
+            div.value {
+                color: darken($icon-color, 10%);
+            }
+        }
+    }
+}

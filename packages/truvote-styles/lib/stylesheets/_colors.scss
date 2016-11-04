@@ -26,8 +26,8 @@ $icon-color: mix(white, $text-base, 50%);
 
 /* ------ Support/Oppose --------- */
 
-$support: $base-color;
-$oppose: rgb(217, 65, 34);
+$support: #39B278;
+$oppose: #D13944;
 $total: rgb(140, 176, 202);
 .support {
     color: lighten($support, 40%);

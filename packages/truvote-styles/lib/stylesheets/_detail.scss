@@ -22,19 +22,7 @@ div.detail {
             @include vertical-align;
         }
         div.detail-date {
-            $detail-date-height: 36px;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 30%;
-            height: $detail-date-height;
-            text-align: center;
-            font-size: 1rem;
-            line-height: $detail-date-height;
-            text-overflow: ellipsis;
-            color: lighten($base-light, 10%);
-            background: rgba(darken($base-dark, 20%), 0.7);
-            border-bottom: 3px solid $base-color;
+@include date-detail;
         }
     }
     div.detail-title {
