@@ -38,7 +38,7 @@ const getSinglePostUsers = post => {
   let users = [post.userId]; // publish post author's ID
 
   /* 
-  NOTE: to avoid circular dependencies between truvote-posts and nova:comments, 
+  NOTE: to avoid circular dependencies between nova:posts and nova:comments, 
   use callback hook to get comment authors
   */
   users = Telescope.callbacks.run("posts.single.getUsers", users, post);

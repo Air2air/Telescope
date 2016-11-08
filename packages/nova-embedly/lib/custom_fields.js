@@ -2,7 +2,7 @@ import Telescope from 'meteor/nova:lib';
 import PublicationUtils from 'meteor/utilities:smart-publications';
 import EmbedlyURL from './components/EmbedlyURL.jsx';
 import ThumbnailURL from './components/ThumbnailURL.jsx';
-import Posts from "meteor/truvote-posts";
+import Posts from "meteor/nova:posts";
 import Users from 'meteor/nova:users';
 
 // check if user can create a new post

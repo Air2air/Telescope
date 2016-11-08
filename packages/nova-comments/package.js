@@ -12,7 +12,7 @@ Package.onUse(function (api) {
   api.use([
     'nova:lib@0.27.0-nova',
     'nova:settings@0.27.0-nova',
-    'truvote-posts@0.27.0-nova',
+    'nova:posts@0.27.0-nova',
     'nova:users@0.27.0-nova'
   ]);
 

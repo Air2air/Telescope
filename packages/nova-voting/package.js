@@ -12,7 +12,7 @@ Package.onUse(function (api) {
   api.use(['nova:core@0.27.0-nova']);
 
   api.use([
-    'truvote-posts@0.27.0-nova', 
+    'nova:posts@0.27.0-nova', 
     'nova:comments@0.27.0-nova'
   ], ['client', 'server']);
 

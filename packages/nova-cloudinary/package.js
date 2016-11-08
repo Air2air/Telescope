@@ -10,7 +10,7 @@ Package.onUse(function (api) {
   api.versionsFrom(['METEOR@1.0']);
 
   api.use([
-    'truvote-posts@0.27.0-nova',
+    'nova:posts@0.27.0-nova',
     'nova:core@0.27.0-nova'
   ]);
 

@@ -7,8 +7,8 @@ import Users from 'meteor/nova:users';
  * @summary Notify users subscribed to the comment's thread
  */
  
-if (typeof Package['truvote-posts'] !== "undefined" && typeof Package['nova:comments'] !== "undefined") {
-  import Posts from 'meteor/truvote-posts';
+if (typeof Package['nova:posts'] !== "undefined" && typeof Package['nova:comments'] !== "undefined") {
+  import Posts from 'meteor/nova:posts';
   
   const SubscribedPostNotifications = (comment) => {
     // note: dummy content has disableNotifications set to true
@@ -39,7 +39,7 @@ if (typeof Package['truvote-posts'] !== "undefined" && typeof Package['nova:comm
 /**
  * @summary Notify users subscribed to 'another user' whenever another user posts
  */
-if (typeof Package['truvote-posts'] !== "undefined") {
+if (typeof Package['nova:posts'] !== "undefined") {
   const SubscribedUsersNotifications = (post) => {
     if (typeof Telescope.notifications !== "undefined" && Meteor.isServer) {
 
@@ -68,7 +68,7 @@ if (typeof Package['truvote-posts'] !== "undefined") {
  * @summary Notify users subscribed to 'another user' whenever another user posts
  */
 
- if (typeof Package['truvote-posts'] !== "undefined" && typeof Package['nova:categories'] !== "undefined") {
+ if (typeof Package['nova:posts'] !== "undefined" && typeof Package['nova:categories'] !== "undefined") {
   import Categories from 'meteor/nova:categories';
 
   const SubscribedCategoriesNotifications = (post) => {

@@ -1,7 +1,7 @@
 import React, { PropTypes, Component } from 'react'; // used to load Tags component
 import Telescope from 'meteor/nova:lib';
 import Users from 'meteor/nova:users';
-import Posts from 'meteor/truvote-posts';
+import Posts from 'meteor/nova:posts';
 import Tags from 'meteor/nova:forms-tags';
 import Categories from "meteor/nova:categories";
 import PublicationUtils from 'meteor/utilities:smart-publications';

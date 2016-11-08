@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 import moment from 'moment';
 import Telescope from 'meteor/nova:lib';
 import { Link } from 'react-router';
-import Posts from "meteor/truvote-posts";
+import Posts from "meteor/nova:posts";
 import Categories from "meteor/nova:categories";
 
 

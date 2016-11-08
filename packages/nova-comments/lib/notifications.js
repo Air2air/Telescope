@@ -1,5 +1,5 @@
 import Comments from './collection.js';
-import Posts from "meteor/truvote-posts";
+import Posts from "meteor/nova:posts";
 
 Comments.getNotificationProperties = function (data) {
   const comment = data.comment;

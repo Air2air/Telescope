@@ -1,5 +1,5 @@
-if (typeof Package['truvote-posts'] !== "undefined") {
-  import Posts from "meteor/truvote-posts";
+if (typeof Package['nova:posts'] !== "undefined") {
+  import Posts from "meteor/nova:posts";
 
   Posts.views.add("userSubscribedPosts", function (terms) {
     var user = Meteor.users.findOne(terms.userId),

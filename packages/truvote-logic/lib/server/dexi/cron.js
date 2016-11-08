@@ -3,7 +3,7 @@ import toMarkdown from 'to-markdown';
 import { Meteor } from 'meteor/meteor';
 import Telescope from 'meteor/nova:lib';
 import Users from 'meteor/nova:users';
-import Posts from 'meteor/truvote-posts';
+import Posts from 'meteor/nova:posts';
 
 import dexiRequest from './requests.js';
 import data from './mocks.js';

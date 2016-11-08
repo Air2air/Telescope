@@ -13,7 +13,7 @@ Package.onUse(function(api) {
         'nova:lib',
         'nova:users',
         'nova:base-components',
-        'truvote-posts',
+        'nova:posts',
     ]);
 
     api.addFiles([

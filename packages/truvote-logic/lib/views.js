@@ -1,5 +1,5 @@
 import Telescope from 'meteor/nova:lib';
-import Posts from 'meteor/truvote-posts';
+import Posts from 'meteor/nova:posts';
 
 Posts.views.baseParameters.selector = {
   ...Posts.views.baseParameters.selector,

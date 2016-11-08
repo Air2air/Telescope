@@ -1,7 +1,7 @@
 import Telescope from 'meteor/nova:lib';
 import React from 'react';
 import { Link } from 'react-router';
-import Posts from "meteor/truvote-posts";
+import Posts from "meteor/nova:posts";
 
 const PostsCommenters = ({post}) => {
   return (

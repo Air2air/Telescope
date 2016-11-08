@@ -11,7 +11,7 @@ Package.onUse( function(api) {
 
     'nova:core',
     'nova:base-components',
-    'truvote-posts',
+    'nova:posts',
     'nova:users'
   ]);
 

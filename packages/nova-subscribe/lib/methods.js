@@ -165,9 +165,9 @@ const performSubscriptionAction = (action, collection, itemId, user) => {
 // nova:users is a dependency of this package, it is alreay imported 
 Meteor.methods(subscribeMethodsGenerator(Users));
 
-// check if truvote-posts exists, if yes, add the methods to Posts
-if (typeof Package['truvote-posts'] !== 'undefined') {
-  import Posts from 'meteor/truvote-posts';
+// check if nova:posts exists, if yes, add the methods to Posts
+if (typeof Package['nova:posts'] !== 'undefined') {
+  import Posts from 'meteor/nova:posts';
   Meteor.methods(subscribeMethodsGenerator(Posts));
 }
 

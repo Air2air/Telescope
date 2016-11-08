@@ -6,7 +6,7 @@ nova:core # do not remove!
 
 nova:settings
 nova:users
-# nova:posts
+nova:posts
 nova:comments
 nova:newsletter
 nova:search
@@ -43,5 +43,5 @@ nova:debug
 
 truvote-logic
 truvote-styles
-truvote-posts
+
 
