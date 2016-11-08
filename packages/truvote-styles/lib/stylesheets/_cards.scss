@@ -1,89 +1,89 @@
 @import 'variables';
-$card-footer-height:44px;
 .row.cards {
     & > [class^="col-"], & > [class*=" col-"] {
         padding-right: 6px;
         padding-left: 6px;
-        .card {
-            cursor: pointer;
-            border-radius: none;
-            border: 1px solid #eee;
-            transition: all .2s ease-in-out;
-            overflow: hidden;
-            padding: 0;
-            margin-top: 12px;
-            border: 1px solid $border-color;
-            //background: red;
-        }
-
     }
 }
 
 
 /*-------- Mixin -------- */
 
-@mixin org-header($height, $width, $font-size) {
-    height: $height;
-    width: $width;
-    div.logo {
-        $logo-padding: 10px;
-        $logo-size: $height - ($logo-padding * 2);
-        padding: $logo-padding;
-        float: left;
-        //background: green;
-        a img {
-            height: $logo-size;
-            width: $logo-size;
-        }
-    }
-    div.text {
+.card {
+    $card-height: 300px;
+    cursor: pointer;
+    border-radius: none;
+    border: 1px solid #eee;
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+    border: 1px solid $border-color;
+    height: $card-height;
+    //background: red;
+    .card-header {
+        $card-header-height: 50px;
+        height: $card-header-height;
+        padding: 0;
+        background: $panel-color;
         div {
             text-align: center;
-            height: ($height * .5);
-            &.dept {
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                line-height: ($font-size * 3.5);
-                a {
-                    @include font-s($font-size, darken($text-light, 20%));
-                }
-            }
+            $inner-div-height: ($card-header-height / 2);
+            height: $inner-div-height;
             &.org {
+                $font-size: 1em;
                 @include font-c($font-size, lighten($text-light, 10%));
-                line-height: ($font-size * 1.7);
-                line-height: 2em;
+                line-height: ($inner-div-height * 1.2);
                 white-space: nowrap;
                 text-transform: uppercase;
                 text-overflow: ellipsis;
                 letter-spacing: 0.05rem;
                 font-weight: bold;
             }
+            &.dept {
+                $font-size: 1em;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                line-height: ($inner-div-height * .7);
+                a {
+                    @include font-s($font-size, darken($text-light, 20%));
+                }
+            }
         }
-    }
-    &:hover {
-        background: $panel-hover-color;
-        div.logo {
-            opacity: 1;
-        }
-        div.org-header-text {
-            div {
-                &.dept {
-                    a {
+        &:hover {
+            background: $panel-hover-color;
+            div.org-header-text {
+                div {
+                    &.dept {
+                        a {
+                            color: $text-base;
+                        }
+                    }
+                    &.org {
                         color: $text-base;
                     }
-                }
-                &.org {
-                    color: $text-base;
                 }
             }
         }
     }
-}
-
-div.card {
-    div.org-header {
-        @include org-header(70px, 100%, .95em)
+    .card-image {
+        $card-image-height: 100px;
+        position: relative;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        height: $card-image-height!important;
+        border-bottom: 1px solid $border-color;
+        width: 100%;
+        height: card-image-height;
+        img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            height: auto;
+            width: 100%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
     }
 }
-
-

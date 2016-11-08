@@ -21,20 +21,15 @@ class TruCard extends Telescope.components.PostsItem {
     return (
   <div className="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
     <div className="card text-xs-center">
-      <div className="org-header">
-        <div className="logo">
-          {post.user? <Telescope.components.UsersAvatar user={post.user} /> : null}
+      <div className="card-header">
+        <div className="org">
+          City of Belmont
         </div>
-        <div className="text">
-            <div className="dept">
-              {post.user? <Telescope.components.UsersName user={post.user}/> : null}
-            </div>
-            <div className="org">
-              City of Belmont
-            </div>
+        <div className="dept">
+          {post.user? <Telescope.components.UsersName user={post.user}/> : null}
         </div>
       </div>
-      <div className="content-image">
+      <div className="card-image">
         {post.thumbnailUrl ? <Telescope.components.PostsThumbnail post={post}/> : null} 
         <div className="date">
           <FormattedRelative value={post.postedAt}/>
@@ -56,16 +51,6 @@ class TruCard extends Telescope.components.PostsItem {
 
       </div>
       <div className="footer">
-        <div className="col-xs-6">
-          <div className="icon">
-            {this.renderCommenters()}
-          </div>
-        </div>
-        <div className="col-xs-6">
-          <div className="chart">
-              <Telescope.components.TruGauge/>
-          </div>
-        </div>
       </div>
     </div>
   </div>

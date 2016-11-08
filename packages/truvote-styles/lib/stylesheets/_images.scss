@@ -15,11 +15,7 @@
     }
 }
 
-div.card {
-    div.content-image {
-        @include content-image(120px, 100%);
-    }
-}
+
 
 div.detail {
     div.content-image {

@@ -8,7 +8,6 @@ div.detail {
         border-bottom: none;
         background: $panel-color;
         transition: all 400ms ease-in-out;
-
     }
     div.content-image {
         position: relative;
@@ -22,7 +21,7 @@ div.detail {
             @include vertical-align;
         }
         div.detail-date {
-@include date-detail;
+            @include date-detail;
         }
     }
     div.detail-title {
