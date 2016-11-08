@@ -9,7 +9,27 @@ import TruPostsReject from "./components/posts/TruPostsReject.jsx";
 import TruPostsTotalVotes from "./components/posts/TruPostsTotalVotes.jsx";
 import TruCard from "./components/posts/TruCard.jsx";
 import TruPostsList from "./components/posts/TruPostsList.jsx";
+
+// New Post components from Nov. 7
+import PostsCategories from "./components/posts/PostsCategories.jsx";
+import PostsCommenters from "./components/posts/PostsCommenters.jsx";
+import PostsCommentsThread from "./components/posts/PostsCommentsThread.jsx";
+import PostsDaily from "./components/posts/PostsDaily.jsx";
+import PostsDay from "./components/posts/PostsDay.jsx";
+import PostsEditForm from "./components/posts/PostsEditForm.jsx";
+import PostsHome from "./components/posts/PostsHome.jsx";
+import PostsListHeader from "./components/posts/PostsListHeader.jsx";
+import PostsLoading from "./components/posts/PostsLoading.jsx";
+import PostsLoadMore from "./components/posts/PostsLoadMore.jsx";
+import PostsNewButton from "./components/posts/PostsNewButton.jsx";
+import PostsNewForm from "./components/posts/PostsNewForm.jsx";
+import PostsNoMore from "./components/posts/PostsNoMore.jsx";
+import PostsNoResults from "./components/posts/PostsNoResults.jsx";
+import PostsPage from "./components/posts/PostsPage.jsx";
+import PostsSingle from "./components/posts/PostsSingle.jsx";
+import PostsStats from "./components/posts/PostsStats.jsx";
 import PostsThumbnail from "./components/posts/PostsThumbnail.jsx";
+import PostsViews from "./components/posts/PostsViews.jsx";
 
 // Common
 import AlertDot from "./components/common/AlertDot.jsx";
@@ -40,6 +60,27 @@ Telescope.components.TruPostsTotalVotes = TruPostsTotalVotes;
 Telescope.components.PostsItem = TruCard;
 Telescope.components.PostsList = TruPostsList;
 Telescope.components.PostsThumbnail = PostsThumbnail;
+
+// New Post components from Nov. 7
+Telescope.components.PostsCategories = PostsCategories;
+Telescope.components.PostsCommenters = PostsCommenters;
+Telescope.components.PostsCommentsThread = PostsCommentsThread;
+Telescope.components.PostsDaily = PostsDaily;
+Telescope.components.PostsDay = PostsDay;
+Telescope.components.PostsEditForm = PostsEditForm;
+Telescope.components.PostsHome = PostsHome;
+Telescope.components.PostsListHeader = PostsListHeader;
+Telescope.components.PostsLoading = PostsLoading;
+Telescope.components.PostsLoadMore = PostsLoadMore;
+Telescope.components.PostsNewButton = PostsNewButton;
+Telescope.components.PostsNewForm = PostsNewForm;
+Telescope.components.PostsNoMore = PostsNoMore;
+Telescope.components.PostsNoResults = PostsNoResults;
+Telescope.components.PostsPage = PostsPage;
+Telescope.components.PostsSingle = PostsSingle;
+Telescope.components.PostsStats = PostsStats;
+Telescope.components.PostsThumbnail = PostsThumbnail;
+Telescope.components.PostsViews = PostsViews;
 
 // Common
 Telescope.components.AlertDot = AlertDot;
