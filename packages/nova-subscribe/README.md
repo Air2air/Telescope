@@ -5,7 +5,7 @@ This optional package for Nova lets your users subscribe to the different domain
 ### Dependencies & usage
 Explicit dependency on `nova:users` to enable permissions.
 
-If `nova:posts` is enabled, your users will be able to subscribe to:
+If `truvote-posts` is enabled, your users will be able to subscribe to:
 * new posts from users they follow (subscribed to)
 * new comments on a post they are subscribed to
 

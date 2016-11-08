@@ -1,5 +1,5 @@
 Package.describe({
-  name: "nova:posts",
+  name: "truvote-posts",
   summary: "Telescope posts package",
   version: "0.27.0-nova",
   git: "https://github.com/TelescopeJS/telescope-posts.git"

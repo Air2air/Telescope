@@ -3,7 +3,7 @@ import React, { PropTypes, Component } from 'react';
 import { intlShape } from 'react-intl';
 import NovaForm from "meteor/nova:forms";
 import { withRouter } from 'react-router'
-import Posts from "meteor/nova:posts";
+import Posts from "meteor/truvote-posts";
 
 const PostsNewForm = (props, context) => {
   

@@ -1,5 +1,5 @@
 import marked from 'marked';
-import Posts from "meteor/nova:posts";
+import Posts from "meteor/truvote-posts";
 import Comments from "meteor/nova:comments";
 import Categories from "meteor/nova:categories";
 import Events from "meteor/nova:events";

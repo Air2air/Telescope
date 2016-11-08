@@ -41,9 +41,9 @@ Users.addField([
 ]);
 PublicationUtils.addToFields(Users.publishedFields.list, ["telescope.subscribedItems", "telescope.subscribers", "telescope.subscriberCount"]);
 
-// check if nova:posts exists, if yes, add the custom fields to Posts
-if (typeof Package['nova:posts'] !== "undefined") {
-  import Posts from 'meteor/nova:posts';
+// check if truvote-posts exists, if yes, add the custom fields to Posts
+if (typeof Package['truvote-posts'] !== "undefined") {
+  import Posts from 'meteor/truvote-posts';
   Posts.addField([
     {
       fieldName: 'subscribers',

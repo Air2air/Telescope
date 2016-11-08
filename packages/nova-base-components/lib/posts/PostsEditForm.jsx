@@ -5,7 +5,7 @@ import NovaForm from "meteor/nova:forms";
 import { DocumentContainer } from "meteor/utilities:react-list-container";
 //import { Messages } from "meteor/nova:core";
 //import Actions from "../actions.js";
-import Posts from "meteor/nova:posts";
+import Posts from "meteor/truvote-posts";
 import Users from 'meteor/nova:users';
 
 class PostsEditForm extends Component{

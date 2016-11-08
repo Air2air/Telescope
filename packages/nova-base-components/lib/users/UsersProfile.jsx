@@ -2,7 +2,7 @@ import Telescope from 'meteor/nova:lib';
 import React, { PropTypes, Component } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { ListContainer } from "meteor/utilities:react-list-container";
-import Posts from "meteor/nova:posts";
+import Posts from "meteor/truvote-posts";
 import Users from 'meteor/nova:users';
 import { Link } from 'react-router';
 

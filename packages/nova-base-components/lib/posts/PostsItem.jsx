@@ -5,7 +5,7 @@ import { Button } from 'react-bootstrap';
 import moment from 'moment';
 import { ModalTrigger } from "meteor/nova:core";
 import { Link } from 'react-router';
-import Posts from "meteor/nova:posts";
+import Posts from "meteor/truvote-posts";
 import Users from 'meteor/nova:users';
 
 class PostsItem extends Component {

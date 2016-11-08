@@ -3,11 +3,9 @@
     & > [class^="col-"], & > [class*=" col-"] {
         padding-right: 6px;
         padding-left: 6px;
+        //background:red;
     }
 }
-
-
-/*-------- Mixin -------- */
 
 .card {
     $card-height: 300px;

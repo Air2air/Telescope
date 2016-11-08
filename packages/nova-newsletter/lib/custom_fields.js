@@ -1,6 +1,6 @@
 import Telescope from 'meteor/nova:lib';
 import NewsletterSubscribe from './components/NewsletterSubscribe.jsx';
-import Posts from "meteor/nova:posts";
+import Posts from "meteor/truvote-posts";
 import Users from 'meteor/nova:users';
 
 // check if user can create a new account

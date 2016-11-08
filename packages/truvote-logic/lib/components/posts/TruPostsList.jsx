@@ -47,6 +47,8 @@ const TruPostsList = ({results, currentUser, hasMore, ready, count, totalCount, 
   
 };
 
+
+
 TruPostsList.displayName = "TruPostsList";
 
 module.exports = TruPostsList;

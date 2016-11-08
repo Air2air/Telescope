@@ -1,6 +1,6 @@
 import Telescope from 'meteor/nova:lib';
 import moment from 'moment';
-import Posts from "meteor/nova:posts";
+import Posts from "meteor/truvote-posts";
 import Comments from "meteor/nova:comments";
 import Users from 'meteor/nova:users';
 import Categories from "meteor/nova:categories";

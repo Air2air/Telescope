@@ -1,6 +1,6 @@
 import React, { PropTypes, Component } from 'react';
 import Telescope from 'meteor/nova:lib';
-import Posts from "meteor/nova:posts";
+import Posts from "meteor/truvote-posts";
 
 // give total posts votes for the organizations
 const TruPostsTotalVotes = (props, context) => {

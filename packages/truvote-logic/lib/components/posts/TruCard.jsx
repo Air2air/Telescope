@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 import moment from 'moment';
 import Telescope from 'meteor/nova:lib';
 import { Link } from 'react-router';
-import Posts from "meteor/nova:posts";
+import Posts from "meteor/truvote-posts";
 import Categories from "meteor/nova:categories";
 
 
@@ -48,9 +48,6 @@ class TruCard extends Telescope.components.PostsItem {
         <Telescope.components.TruPostsApprove post={post} />
         <Telescope.components.TruPostsReject post={post} />
       */}
-
-      </div>
-      <div className="footer">
       </div>
     </div>
   </div>

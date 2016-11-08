@@ -1,5 +1,5 @@
 import Telescope from 'meteor/nova:lib';
-import Posts from "meteor/nova:posts";
+import Posts from "meteor/truvote-posts";
 import Categories from "./collection.js";
 
 Categories.helpers({getCollection: () => Categories});

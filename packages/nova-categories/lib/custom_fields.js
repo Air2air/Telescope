@@ -1,5 +1,5 @@
 import PublicationUtils from 'meteor/utilities:smart-publications';
-import Posts from "meteor/nova:posts";
+import Posts from "meteor/truvote-posts";
 import Users from 'meteor/nova:users';
 import Categories from "./collection.js";
 

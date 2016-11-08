@@ -1,4 +1,4 @@
-import Posts from "meteor/nova:posts";
+import Posts from "meteor/truvote-posts";
 import Users from 'meteor/nova:users';
 
 Comments._ensureIndex({postId: 1});
