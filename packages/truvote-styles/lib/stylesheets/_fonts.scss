@@ -19,7 +19,7 @@
 /*---------------- Layout --------------- */
 
 html, body {
-    @include font-s(14px, $text-base);
+    @include font-s(15px, $text-base);
     -webkit-font-smoothing: antialiased;
 }
 
@@ -36,7 +36,7 @@ p {
 a {
     color: $base-color;
     &:hover {
-        color: lighten($base-color, 20%);
+        color: $text-light;
         text-decoration: none;
     }
 }

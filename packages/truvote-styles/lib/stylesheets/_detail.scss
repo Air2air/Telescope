@@ -1,33 +1,38 @@
 @import 'variables';
-$detail-header-height:90px;
-div.detail {
-    div.detail-header {
+$detail-header-height:50px;
+div.posts-page {
+    div.post-header {
         width: 100%;
         height: $detail-header-height;
+        line-height: $detail-header-height;
         padding: 0;
         border-bottom: none;
-        background: $panel-color;
+        //background: $panel-color;
         transition: all 400ms ease-in-out;
+        a {
+            text-align: center;
+            font-size: 1.2em;
+            background: $panel-color;
+            &:hover {
+                background: $white;
+            }
+        }
     }
-    div.content-image {
+    div.post-image {
         position: relative;
         top: 0;
         overflow: hidden;
-        height: 200px!important;
-        width: auto;
-        border-bottom: 1px solid $border-color;
+        width: $window-width;
+        height: ($window-width * .3);
         img {
             width: 100%;
             @include vertical-align;
         }
-        div.detail-date {
-            @include date-detail;
-        }
     }
-    div.detail-title {
+    h1 {
         padding: 30px;
         text-align: center;
-        @include font-c(4em, $text-base);
+        @include font-c(2.5em, $text-base);
     }
 }
 
