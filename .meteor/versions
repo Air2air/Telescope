@@ -67,7 +67,6 @@ mongo-id@1.0.6
 nova:api@0.27.5-nova
 nova:base-components@0.27.5-nova
 nova:base-routes@0.27.5-nova
-nova:base-styles@0.27.5-nova
 nova:categories@0.27.5-nova
 nova:comments@0.27.5-nova
 nova:core@0.27.5-nova
@@ -77,15 +76,16 @@ nova:email-templates@0.27.5-nova
 nova:embedly@0.27.5-nova
 nova:events@0.27.5-nova
 nova:forms@0.27.5-nova
+nova:forms-tags@0.27.5-nova
 nova:getting-started@0.27.5-nova
 nova:i18n-en-us@0.27.5-nova
 nova:lib@0.27.5-nova
-nova:newsletter@0.27.5-nova
 nova:notifications@0.27.5-nova
 nova:posts@0.27.5-nova
 nova:rss@0.27.5-nova
 nova:search@0.27.5-nova
 nova:settings@0.27.5-nova
+nova:subscribe@0.27.5-nova
 nova:users@0.27.5-nova
 nova:voting@0.27.5-nova
 npm-bcrypt@0.9.2
@@ -124,6 +124,7 @@ std:accounts-ui@1.2.9
 tmeasday:check-npm-versions@0.3.1
 tmeasday:publish-counts@0.8.0
 tracker@1.1.1
+truvote@0.0.1
 ui@1.0.12
 underscore@1.0.10
 url@1.0.11
